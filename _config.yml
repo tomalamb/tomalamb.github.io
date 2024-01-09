@@ -83,7 +83,7 @@ author:
   name             : "Tom Lamb"
   avatar           : "profile.png"
   bio              : "DPhil Candidate at TVG, University of Oxford."
-  location         : "Location"
+  location         : "Oxford"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=cfJt-hgAAAAJ&hl=en&authuser=1"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "tom_andrew_lamb"
+  twitter          : "@tom_andrew_lamb"
   vine             :
   weibo            :
   xing             :
