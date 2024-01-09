@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Tom. I'm a first year DPhil (PhD) student in Machine Learning at the Torr Vision Group (TVG), University of Oxford. Here I'm supervised by Prof. Philip Torr. 
+Hi, I'm Tom. I'm a first year DPhil (PhD) student in Machine Learning at the Torr Vision Group (TVG), University of Oxford. Here, I'm supervised by Prof. Philip Torr. 
 
 My research interests include geometric and Bayesian methods and uncertainty quantification. 
 
