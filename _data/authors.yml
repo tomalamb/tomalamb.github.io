@@ -1,13 +1,13 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
+  name        : "Tom Lamb"
   uri         : "http://name.com"
-  email       : "name@name.com"
+  email       : "thomas.lamb@eng.ox.ac.uk"
   bio         : "This is the first name."
   avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  twitter     : "@tom_andrew_lamb"
+  google_plus : 
 
 Name2 Name2:
   name        : "Name2 Name2"
