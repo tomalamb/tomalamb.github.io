@@ -14,4 +14,4 @@ I'm also a OxAI team memeber. If interested, please feel free to check out my bl
 
 In the past, I used to a be a little better at mathematics and was also breifly a teacher. You can find relavent material in the resources section. 
 
-Feel free to reach out by email to chat or discuss anything ML related! 
+Feel free to reach out by email to chat or discuss anything ML or mathematics related! 
