@@ -1,9 +1,9 @@
 ---
 title: "Faithful Knowledge Distillation [Preprint]"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2023-08-11-paper-title-number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 11-08-23
+date: 23-08-11
 venue: 'Arxiv'
 paperurl: 'https://arxiv.org/abs/2306.04431'
 citation: 'Lamb, Tom A., et al. "Faithful Knowledge Distillation." arXiv preprint arXiv:2306.04431 (2023).'
@@ -13,9 +13,15 @@ citation: 'Lamb, Tom A., et al. "Faithful Knowledge Distillation." arXiv preprin
 [Download paper here](https://arxiv.org/pdf/2306.04431.pdf)
 
 Recommended (bib) citation: 
+
 @article{lamb2023faithful,
+
   title={Faithful Knowledge Distillation},
+
   author={Lamb, Tom A and Brunel, Rudy and Kumar, M Pawan and Torr, Philip HS and Eiras, Francisco and others},
+
   journal={arXiv preprint arXiv:2306.04431},
+
   year={2023}
+
 }
