@@ -14,6 +14,6 @@ My research interests include geometric and Bayesian methods and uncertainty qua
 
 In the past, I used to a be a little better at mathematics and was also breifly a teacher. You can find relavent material in the resources section. 
 
-I'm currenlty also a team memeber of OxAI. If interested, please feel free to check out my blog posts where I try to give an accessibly complete and rigours (while hopefully being accessible) on various topics in ML and mathematics (/will when I stop procrasitinating this... ). 
+I'm also a OxAI team memeber. If interested, please feel free to check out my blog posts where I try to give a complete and rigorous (while hopefully being accessible) on various topics in ML and mathematics (/will when I stop procrasitinating this... ). Paper chasing to learn new topics and ideas can be rather tedious and time consuming, so I hope that I can help a little bit with this :). 
 
 Feel free to reach out by email to chat or discuss anything ML related! 
