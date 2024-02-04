@@ -13,19 +13,19 @@ Below is a brief outline of my CV. The full CV can be found here: [View Full CV]
 Research Experience
 ======
 * UNIQ+ DeepMind Machine Learning Research Intern, Universtiy of Oxford.
-  ** Research intern in machine learning at Oxford University based in the Torr Vision Group (TVG). Here, I was supervised by Francisco Girbal Eiras and Prof. Philip H.S. Torr. Research focussed on verfied methods and knowlege distillation.
-  ** Our work can currently be found on ArXiV under the title `Faithful Knowledge Distillation'.
+  * Research intern in machine learning at Oxford University based in the Torr Vision Group (TVG). Here, I was supervised by Francisco Girbal Eiras and Prof. Philip H.S. Torr. Research focussed on verfied methods and knowlege distillation.
+  * Our work can currently be found on ArXiV under the title `Faithful Knowledge Distillation'.
 * Summer Mathematics Research Student, University of Durham.
-  ** Summer research Student supervised by Prof. Herbert Gangl. Here, we derived novel results relating integrals of polylogarithms to linear combinations of multiple zeta values (MZVs).
+  * Summer research Student supervised by Prof. Herbert Gangl. Here, we derived novel results relating integrals of polylogarithms to linear combinations of multiple zeta values (MZVs).
 Education
 ======
 * DPhil Machine Learning, University of Oxford, 2023 - Present
-  ** Supervised by Prof. Philip H.S. Torr.
-  ** My research interests include geometrical and Bayesian methods and uncertainty quantification in ML.
+  * Supervised by Prof. Philip H.S. Torr.
+  * My research interests include geometrical and Bayesian methods and uncertainty quantification in ML.
 * MSc Artificial Intelligence, Univeristy of Edinburgh, 2022 - 2023
-  ** Recieved the MSc Artifical Intelligence Class Prize.
+  * Recieved the MSc Artifical Intelligence Class Prize.
 * MMath Mathematics, University Of Durham, 2016 - 2020
-  ** Specialised in Pure Mathematics.
-  ** Recieved the John Crowther and Percy Heywood Prizes.
+  * Specialised in Pure Mathematics.
+  * Recieved the John Crowther and Percy Heywood Prizes.
 
 
