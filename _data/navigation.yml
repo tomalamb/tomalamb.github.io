@@ -7,7 +7,7 @@ main:
     url: /cv/
         
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /posts/
     
   - title: "Resources"
     url: /resources/
