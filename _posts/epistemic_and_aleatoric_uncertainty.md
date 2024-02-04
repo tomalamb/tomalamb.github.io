@@ -1,5 +1,5 @@
 ---
-title: 'Epistemic and Aleatoric Uncertatiny'
+title: 'Epistemic and Aleatoric Uncertainty'
 date: 2024-02-05
 permalink: /posts/epivsalea/
 tags:
