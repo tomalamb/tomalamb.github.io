@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+Below is a brief outline of my CV. The full CV can be found here: [View Full CV](../files/Academic_CV.pdf) 
 
 Education
 ======
