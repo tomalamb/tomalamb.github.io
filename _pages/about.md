@@ -12,6 +12,6 @@ Hi, I'm Tom. I'm a first year DPhil (PhD) student in Machine Learning at the Tor
 
 I'm also a OxAI team member. Please feel free to check out my blog posts where I try to give a complete and rigorous (while hopefully being accessible) introduction to various topics in ML and mathematics. Learning directly from papers can be rather tedious, unclear, frustraing and time consuming, so I hope that I can help a little bit with this :). Please do suggest any topics that you'd like to see!  
 
-In the past, I used to a be a little better at mathematics and was also breifly a teacher. You can find relavent material in the resources section. 
+In the past, I used to a be a little better at mathematics and was also briefly a teacher. You can find relevant material in the resources section. 
 
 Feel free to reach out by email to chat or discuss anything ML or mathematics related! 
