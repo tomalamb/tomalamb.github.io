@@ -3,7 +3,7 @@ title: 'Epistemic and Aleatoric Uncertainty in Machine Learning'
 date: 2024-02-03
 collection: posts
 permalink: /posts/2024-02-03-epistemic_and_aleatoric_uncertainty.md/
-excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML
+excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML.'
 ---
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
