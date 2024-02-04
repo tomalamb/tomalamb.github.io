@@ -17,4 +17,4 @@ In the past, I used to a be a little better at mathematics. You can some related
 
 Feel free to reach out by email to chat or discuss anything ML or mathematics related! 
 
-{% include image_with_caption.html url="/images/scotish-castle.jpeg" alt="Alt text" caption="Picture" %}
+{% include image_with_caption.html url="/images/scotish-castle.jpeg" alt="Castle Stalker, Argyll, Scotland." caption="Picture" %}
