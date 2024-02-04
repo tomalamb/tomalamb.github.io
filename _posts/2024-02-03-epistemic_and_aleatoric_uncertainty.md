@@ -1,8 +1,8 @@
 ---
 title: 'Epistemic and Aleatoric Uncertainty in Machine Learning'
-date: 2024-02-04
+date: 2024-02-03
 collection: posts
-permalink: /posts/2024-02-04-epistemic_and_aleatoric_uncertainty.md/
+permalink: /posts/2024-02-03-epistemic_and_aleatoric_uncertainty.md/
 excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML
 ---
 
