@@ -233,6 +233,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # Resources
+    - scope:
+      path: ""
+      type: resources
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
   - scope:
       path: ""
