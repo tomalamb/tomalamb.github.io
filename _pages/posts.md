@@ -1,6 +1,6 @@
 ---
 layout: single 
-title: "Blog Posts"
+title: "Posts"
 permalink: /posts/
 author_profile: true
 ---
