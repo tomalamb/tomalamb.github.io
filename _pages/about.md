@@ -13,7 +13,7 @@ Hi, I'm Tom. I'm a first year DPhil (PhD) student in Machine Learning at the Tor
 
 I'm also a OxAI team member. Please feel free to check out my blog posts produced as part of my role on the education team.
 
-In the past, I used to a be a little better at mathematics. You can some related material and work in the resources section. 
+In the past, I used to a be a little better at mathematics. You can find some related material and work in the resources section. 
 
 Feel free to reach out by email to chat or discuss anything ML or mathematics related! 
 
