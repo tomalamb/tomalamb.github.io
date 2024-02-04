@@ -17,6 +17,7 @@ Research Experience
   * Our work can currently be found on ArXiV under the title `Faithful Knowledge Distillation'.
 * Summer Mathematics Research Student, University of Durham.
   * Summer research Student supervised by Prof. Herbert Gangl. Here, we derived novel results relating integrals of polylogarithms to linear combinations of multiple zeta values (MZVs).
+  
 Education
 ======
 * DPhil Machine Learning, University of Oxford, 2023 - Present
