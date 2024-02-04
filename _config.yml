@@ -234,7 +234,7 @@ defaults:
       share: true
       comments: true
   # Resources
-    - scope:
+  - scope:
       path: ""
       type: resources
     values:
