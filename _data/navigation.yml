@@ -9,5 +9,5 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
-  -title: "Resources"
+  - title: "Resources"
     url: /resources/
