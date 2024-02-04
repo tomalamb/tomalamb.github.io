@@ -1,5 +1,5 @@
 ---
-title: 'Epistemic and Aleatoric Uncertainty'
+title: 'Epistemic and Aleatoric Uncertainty in Machine Learning'
 date: 2024-02-05
 permalink: /posts/epivsalea/
 tags:
