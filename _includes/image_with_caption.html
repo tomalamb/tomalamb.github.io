@@ -1,6 +1,7 @@
-<figure>
-    <img src="{{ include.url }}" alt="{{ include.alt }}" style="width: 70%; height: auto;" class="img-center">
-    {% if include.caption %}
-    <figcaption class="figcaption-center">Caption goes here</figcaption>
-    {% endif %}
-  </figure>
+<!-- _includes/image_with_caption.html -->
+<figure style="text-align: center;">
+  <img src="{{ include.url }}" alt="{{ include.alt }}" style="width: 70%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+  {% if include.caption %}
+  <figcaption style="text-align: center;">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
