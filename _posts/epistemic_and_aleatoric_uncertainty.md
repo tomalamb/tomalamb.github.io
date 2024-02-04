@@ -2,7 +2,7 @@
 title: 'Epistemic and Aleatoric Uncertainty in Machine Learning'
 date: 2024-02-05
 collection: posts
-permalink: /post/epivsalea/
+permalink: /posts/epivsalea/
 tags:
   - Epistemic Uncertainty
   - Aleatoric Uncertainty
