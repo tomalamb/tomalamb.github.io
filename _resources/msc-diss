@@ -8,7 +8,7 @@ date: 23-08-20
 **Abstract:** 
 Einsum Networks (EiNets) are an efficient implementation of a general class of probabilistic models known as probabilistic circuits (PCs). These models have advantages over expressive generative models such as VAEs and GANs because they allow for exact and efficient probabilistic inference of various types. However, as PCs grow in the number of parameters, they become more challenging to train. In particular, they have been shown to be susceptible to ubiquitous problems in deep learning, such as overfitting when trained via maximum likelihood estimation (MLE). Motivated by these problems, we explore an alternative parameter learning method particularly applicable to EiNets known as conditional composite log-likelihood estimation (CCLE). We propose three methods of implementing CCLE for EiNets: uniform random sampling, bisection sampling and grid sampling. In our experiments on MNIST and F-MNIST, we observe that CCLE training shows promise as a valid alternative density and generative training scheme for EiNets to MLE and for providing greater inpainting capabilities. However, a CCLE objective shows mixed results as a form of regularisation during training. Moreover, we note that these findings depend on the CCLE method used, the sizes of the patches chosen for conditional training and the information density of the images within a dataset.
 
-[Download MSc Disseration.](../files/msc-diss.pdf)
+[Download MSc Disseration.](../../files/msc-diss.pdf)
 
 [Link to Repository.](https://github.com/tomalamb/ccle-einets)
 
