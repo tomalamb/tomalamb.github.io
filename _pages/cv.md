@@ -12,7 +12,7 @@ Below is a brief outline of my CV. The full version can be found here: [View Ful
 
 ## Research Experience
 
-* **UNIQ+ DeepMind Machine Learning Research Intern, Universtiy of Oxford (July 2022 - Sept. 2022).**
+* **Machine Learning Research Intern, Universtiy of Oxford (July 2022 - Sept. 2022).**
   * Research intern in machine learning at Oxford University based in the Torr Vision Group (TVG). Here, I was supervised by Francisco Girbal Eiras and Prof. Philip H.S. Torr. Research focussed on verfied methods and knowlege distillation.
   * Our work can currently be found on ArXiV under the title `Faithful Knowledge Distillation'.
 * **Summer Mathematics Research Student, University of Durham (July 2019 - Sept. 2019).**
