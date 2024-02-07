@@ -2,7 +2,7 @@
 title: "Faithful Knowledge Distillation [Preprint]"
 collection: publications
 permalink: /publication/2023-08-11-paper-title-number-1
-excerpt: 'Knowldge distillation; verification; robustness'
+excerpt: 'Knowledge distillation; verification; robustness'
 date: 23-08-11
 venue: 'Arxiv'
 paperurl: 'https://arxiv.org/abs/2306.04431'
