@@ -9,7 +9,6 @@ excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML.'
 # Epistemic and Aleatoric Uncertainty
 
 ## Table of Contents
-
 - [Epistemic and Aleatoric Uncertainty](#epistemic-and-aleatoric-uncertainty)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
@@ -25,7 +24,7 @@ Uncertainty quantification in machine learning (ML) is critical for safely and e
 
 ![Figure 1: Examples of images from the MNIST dataset consisting of 28 x 28 greyscale images of handwritten digits](/images/figure_1.png)
 
-Figure 1: Examples of images from the MNSIT dataset consisting of 28 x 28 greyscale images of handwritten digits
+Figure 1: Examples of images from the MNSIT dataset consisting of 28 x 28 greyscale images of handwritten digits2024-02-03-epistemic-and-aleatoric-uncertainty-in-machine-learning.md
 
 In this blog post, we introduce two forms of uncertainty that are particularly important in ML, namely **epistemic** (reducible) and **aleatoric** (irreducible) uncertainty. We aim to illustrate these two types of uncertainty using a classification task within ML as a running  example, and highlight why quantifying and even untangling each type of uncertainty is important within the context of ML.
 
