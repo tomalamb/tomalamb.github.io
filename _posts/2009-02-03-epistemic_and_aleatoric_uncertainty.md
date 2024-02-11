@@ -8,13 +8,14 @@ excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML.'
 
 # Epistemic and Aleatoric Uncertainty
 
-##  Table of Contents
-1. [Introduction](#introduction)
-2. [What is aleatoric uncertainty?](#what-is-aleatoric-uncertainty)
-3. [What is epistemic uncertainty?](#what-is-epistemic-uncertainty)
-4. [Why are these two concepts important?](#why-are-these-two-concepts-important)
-5. [Concluding Remarks](#concluding-remarks)
+**  Table of Contents
+ - [Introduction](#introduction)
+ - [What is aleatoric uncertainty?](#what-is-aleatoric-uncertainty)
+ - [What is epistemic uncertainty?](#what-is-epistemic-uncertainty)
+ - [Why are these two concepts important?](#why-are-these-two-concepts-important)
+ - [Concluding Remarks](#concluding-remarks)
 
+ <a id="introduction"></a>
 ## Introduction
 Uncertainty quantification in machine learning (ML) is critical for safely and effectively deploying models in real-world scenarios, for enhancing training efficiency, and for supporting informed decision-making processes. Consider a medical application where a machine learning model predicts whether a patient has cancer from a scan of the patient. Quantifying the model's uncertainty is crucial for determining when to rely on the model’s predictions or when to defer to human experts. Moreover, during the training of ML models, understanding which data points a model is uncertain about and whether this uncertainty stems from not having seen a certain type of data before or from the inherent noise or ambiguity in the data, can guide targeted additional training for best improving a model’s performance.
 
@@ -36,6 +37,7 @@ Figure 2: Image classification model with class prediction probabilities for an 
 
 **In future posts we will consider a Bayesian setting where we don’t obtain a single model after training as in the frequentist setting, but we consider a whole distribution of different models. In particular, we use the data observed during training to discern which of these possible models are more likely than others to reflect the underlying function that we’re trying to model. In the Bayesian setting, we will look at the distribution of possible models as a way of quantifying uncertainty. Stay tuned!*
 
+<a id="what-is-aleatoric-uncertainty"></a>
 ## What is aleatoric uncertainty?
 
 Aleatoric uncertainty is the first component of uncertainty that we will focus on. In a nutshell, **aleatoric uncertainty** refers to the uncertainty of our model **stemming from the inherent noise or ambiguity within our data** that **can’t reduced through additional data**. Let us consider two examples to illustrate these points.
@@ -60,6 +62,7 @@ Figure 4: Model predictions on a OOD image of a $\texttt{v}$. Cogs image generat
 
 **This discussion of entropy was a little hand-wavy but hopefully gives some intuition of its use in quantifying how spread out the probabilities in a distribution are. Entropy, in the context of information theory, quantifies the amount of uncertainty or surprise associated with a random variable's possible outcomes. In the next post, we’ll give more details about entropy, including giving its definition and some concrete examples of calculating it for several distributions.*
 
+<a id="what-is-epistemic-uncertainty"></a>
 ## What is epistemic uncertainty?
 
 We now focus on the second type of uncertainty mentioned in the introduction, **epistemic uncertainty.** Epistemic uncertainty can be thought of as the **uncertainty of our model that stems from a lack of knowledge or experience and that can be reduced with additional data**. This in contrast to aleatoric uncertainty that is due to noise or ambiguity n the data and cannot be reduced with additional data.
@@ -74,12 +77,14 @@ In our discussion of epistemic uncertainty, we have noted how models can display
 
 **Taking about uncertainty in language can be tricky. Take this example, if we were to allow for additional context to clarify ambiguous translation, then this uncertainty would now be more akin to epistemic uncertainty due to being reducible - for example if we were told that this is in the general context of someone arriving at an airport then we would be much more certain that the translation should be $\texttt{the flight was easy.}$ For further reading, the following papers discuss the interplay between language, clarifications and uncertainty [6,7].*
 
+<a id="why-are-these-two-concepts-important"></a>
 ## Why are these two concepts important?
 
 Understanding and quantifying the two types of uncertainty—epistemic and aleatoric—is crucial for machine learning (ML) practitioners, especially when training models with limited datasets and compute resources. It is important in such setting to being sample-efficient, allowing your model to learn and improve the most from the least amount of data. For instance, consider a model trained on a dataset of MNIST digits only containing the digits $0$ to $8$. This model  has never seen an image containing the digit $9$. introducing this digit significantly reduces the model's epistemic uncertainty about future $9$ examples by filling a gap in its knowledge. Showing many images of $0$s which the model may already have a good grasp in identifying is going to be a lot less impactful on improving the model than introducing images of the digit $9$.
 
 As a more topical example, lets turn to the task of fine-tuning large language models (LLMs), such as autoregressive models trained to predict the next token based on previous ones, often using vast amounts of unlabelled text in an unsupervised setting. These pre-trained models' expressiveness can be harnessed for downstream tasks like sentiment analysis (predicting whether a price of text expresses positive or negative sentiment for example), where labelled data may be scarce. Methods like LoRA [12] are still relatively resource-intensive even while being one of the more efficient fine-tuning approaches for LLMs given the shear size of language models used today. Therefore, we need to look for and utilise data that for fine-tuning that is going to be most impactful for improving downstream performance on the sentiment analysis task. Take the ambiguous text $\texttt{Interesting experience, wasn't it?}$  Without additional context, determining whether this implies positive or negative sentiment is challenging. More examples of clear positive or negative sentiment won't necessarily clarify the sentiment analysis of such ambiguous statements. This ambiguity represents aleatoric uncertainty, intrinsic to the data, and training our model on similar examples won't improve model performance on the sentiment analysis tasks. Instead, focusing on reducing epistemic uncertainty—uncertainty due to the model's lack of exposure to specific types of examples—promises the most significant performance gains. Therefore, the ability to quantify and differentiate between epistemic and aleatoric uncertainty is essential in this context, enabling more informed decisions about data selection for training and fine-tuning models, especially under constraints of data and computational resources.
 
+<a id="concluding-remarks"></a>
 ## Concluding Remarks
 
 We hope that the discussion on epistemic and aleatoric uncertainty, their distinctions, and the importance of quantifying them has been a useful introduction to the general area. However, we have only scratched on the topic of uncertainty and its quantification in ML. A few points that are worth keeping in mind going forward:
