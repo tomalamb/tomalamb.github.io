@@ -7,6 +7,17 @@ excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML.'
 ---
 
 # Epistemic and Aleatoric Uncertainty
+## Table of Contents
+- [Epistemic and Aleatoric Uncertainty](#epistemic-and-aleatoric-uncertainty)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [What is aleatoric uncertainty?](#what-is-aleatoric-uncertainty)
+  - [What is epistemic uncertainty?](#what-is-epistemic-uncertainty)
+  - [Why are these two concepts important?](#why-are-these-two-concepts-important)
+  - [Concluding Remarks](#concluding-remarks)
+  - [References](#references)
+
+
 
 ## Introduction
 Uncertainty quantification in machine learning (ML) is critical for safely and effectively deploying models in real-world scenarios, for enhancing training efficiency, and for supporting informed decision-making processes. Consider a medical application where a machine learning model predicts whether a patient has cancer from a scan of the patient. Quantifying the model's uncertainty is crucial for determining when to rely on the model’s predictions or when to defer to human experts. Moreover, during the training of ML models, understanding which data points a model is uncertain about and whether this uncertainty stems from not having seen a certain type of data before or from the inherent noise or ambiguity in the data, can guide targeted additional training for best improving a model’s performance.
