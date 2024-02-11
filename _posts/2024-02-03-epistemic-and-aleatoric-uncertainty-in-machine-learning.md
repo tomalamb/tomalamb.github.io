@@ -8,9 +8,7 @@ excerpt: 'Uncertainty; Epistemic Uncertainty; Aleatoric Uncertainty; ML.'
 
 # Epistemic and Aleatoric Uncertainty
 
-## Table of Contents
 - [Epistemic and Aleatoric Uncertainty](#epistemic-and-aleatoric-uncertainty)
-  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [What is aleatoric uncertainty?](#what-is-aleatoric-uncertainty)
   - [What is epistemic uncertainty?](#what-is-epistemic-uncertainty)
