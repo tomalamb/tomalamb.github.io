@@ -12,16 +12,11 @@ citation: 'Lamb, Tom A., et al. "Faithful Knowledge Distillation." arXiv preprin
 
 [Download paper here](https://arxiv.org/pdf/2306.04431.pdf)
 
-Recommended (bib) citation: 
+**Recommended (bib) citation:* 
 
 @article{lamb2023faithful,
-
   title={Faithful Knowledge Distillation},
-
   author={Lamb, Tom A and Brunel, Rudy and Kumar, M Pawan and Torr, Philip HS and Eiras, Francisco and others},
-
   journal={arXiv preprint arXiv:2306.04431},
-
   year={2023}
-
 }
