@@ -11,8 +11,6 @@ citation: 'Lamb, Tom A., et al. "Focus On This, Not That! Steering LLMs With Ada
 **Abstract:** Despite the success of Instruction Tuning (IT) in training large language models (LLMs) to perform arbitrary user-specified tasks, these models often still leverage spurious or biased features learned from their training data, leading to undesired behaviours when deploying them in new contexts. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses
 by “focusing on” specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across several experimental settings, we show that focus-tuned models can be adaptively steered by focusing on different features at inference-time: for instance, robustness can be improved by focusing on task-causal features and ignoring spurious features, and social bias can be mitigated by ignoring demographic categories. Furthermore, FIT can steer behaviour in new contexts, generalising under distribution shift and to new unseen features at inference time, and thereby facilitating more robust, fair, and controllable LLM applications in real-world environments.
 
-[Download paper here](https://arxiv.org/pdf/2410.22944)
-
 **Recommended (bib) citation:**
 
 @article{lamb2024focus,
