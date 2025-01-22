@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Hi, I'm Tom. I'm a first year DPhil (PhD) student in Machine Learning at the Torr Vision Group (TVG), University of Oxford. Here, I'm supervised by Prof. Philip Torr. My research interests include AI safety, LLMs, Bayesian methods and uncertainty quantification in ML.
+Hi, I'm Tom. I'm a second year DPhil (PhD) student in Machine Learning at the Torr Vision Group (TVG), University of Oxford. Here, I'm supervised by Prof. Philip Torr. My research interests include AI safety, LLMs, Bayesian methods and uncertainty quantification in ML.
 
 In the past, I used to a be a little better at mathematics. You can find some related material and work in the resources section. 
 
