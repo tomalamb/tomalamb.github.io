@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-08-11-paper-title-number-4
 excerpt: 'LLMs; steering; spurious correlations'
 date: 24-10-10
-venue: 'NeurIPS, 2024'
+venue: 'NeurIPS'
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/file/848784373188ddf641079524e89e0ac9-Paper-Conference.pdf'
 citation: 'Petrov, A., Lamb, T., Paren, A., Torr, P. and Bibi, A., 2024. Universal in-context approximation by prompting fully recurrent models. Advances in Neural Information Processing Systems, 37, pp.72061-72093.'
 ---

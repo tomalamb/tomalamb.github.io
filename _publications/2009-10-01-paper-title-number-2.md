@@ -5,7 +5,7 @@ collection: publications
 permalink: /publication/2023-08-11-paper-title-number-3
 excerpt: 'LLMs; steering; spurious correlations'
 date: 24-11-09
-venue: 'NeurIPS (2024) Track on Datasets and Benchmarks.'
+venue: 'NeurIPS Track on Datasets and Benchmarks.'
 paperurl: 'https://arxiv.org/abs/2411.06287'
 citation: 'Hemmat, Arshia, et al. "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models." The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track.'
 ---

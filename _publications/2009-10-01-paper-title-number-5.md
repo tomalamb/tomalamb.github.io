@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2025-05-20-paper-title-number-5
 excerpt: 'LLMs; Uncertiainty Quantification; Semantic Calibration'
 date: 25-05-20
-venue: 'ICLR: QUESTION Workshop, 2025'
+venue: 'ICLR: QUESTION Workshop'
 paperurl: 'https://openreview.net/pdf?id=22UNXHzBgt'
 citation: 'Lamb, T. A., Ivanova, D. R., Torr, P., & Rudner, T. G. (2025). Semantic-Level Confidence Calibration of Language Models via Temperature Scaling. In ICLR Workshop: Quantify Uncertainty and Hallucination in Foundation Models: The Next Frontier in Reliable AI.'
 ---

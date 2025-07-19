@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2023-08-11-paper-title-number-3
 excerpt: 'LLMs; steering; spurious correlations'
 date: 25-05-01
-venue: 'ICML, 2025'
+venue: 'ICML'
 paperurl: 'https://openreview.net/pdf?id=rbI5mOUA8Z'
 citation: 'Lamb, Tom A., et al. "Focus On This, Not That! Steering LLMs with Adaptive Feature Specification." Forty-second International Conference on Machine Learning.'
 ---
