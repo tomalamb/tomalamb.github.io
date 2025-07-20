@@ -13,7 +13,7 @@ Below is a brief outline of my CV. The full version can be found here: [View Ful
 ## Research Experience
 
 * **Machine Learning Research Intern, Universtiy of Oxford (July 2022 - Sept. 2022).**
-  * Research intern funded by Google DeepMind and supervised by Francisco Girbal Eiras and Prof.\ Philip H.\ S.\ Torr.
+  * Research intern funded by Google DeepMind and supervised by Francisco Girbal Eiras and Prof. Philip H. S. Torr.
   * Introduced a faithful‐imitation framework for teacher–student networks, formulated LP‐based upper/lower bounds on measures of the local confidence disagreement between teacher and student models, and designed a distillation method yielding verifiably more calibrated student models.
   * Lead to our paper ``Faithful Knowledge Distillation".
 * **Summer Mathematics Research Student, University of Durham (July 2019 - Sept. 2019).**
