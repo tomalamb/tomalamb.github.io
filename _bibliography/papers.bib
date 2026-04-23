@@ -1,0 +1,63 @@
+---
+---
+
+@inproceedings{lambfocus,
+  title        = {Focus On This, Not That! Steering {LLMs} with Adaptive Feature Specification},
+  author       = {Lamb, Tom A and Davies, Adam and Paren, Alasdair and Torr, Philip and Pinto, Francesco},
+  booktitle    = {Forty-second International Conference on Machine Learning},
+  year         = {2025},
+  abbr         = {ICML},
+  html         = {https://openreview.net/pdf?id=rbI5mOUA8Z},
+  arxiv        = {2503.10326},
+  abstract     = {Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.},
+  selected     = {true},
+  bibtex_show  = {true}
+}
+
+@inproceedings{lamb2025semantic,
+  title        = {Semantic-Level Confidence Calibration of Language Models via Temperature Scaling},
+  author       = {Lamb, Tom A and Ivanova, Desi R and Torr, Philip and Rudner, Tim GJ},
+  booktitle    = {ICLR Workshop: Quantify Uncertainty and Hallucination in Foundation Models: The Next Frontier in Reliable AI},
+  year         = {2025},
+  abbr         = {ICLR},
+  html         = {https://openreview.net/pdf?id=22UNXHzBgt},
+  abstract     = {Calibration of language models is typically studied at the token level, with scalar temperature scaling serving as the primary approach for recalibrating models. Recent multi-sampling techniques allow us to elicit semantic uncertainty measures from language models. However, these techniques focus on summary statistics of the limited existing semantic confidence distributions rather than on how well-calibrated these distributions are, a crucial factor in ensuring that the resulting semantic likelihoods are both meaningful and reliable. In this paper, we investigate whether and how temperature scaling, which directly influences generative diversity and token-level calibration, affects semantic calibration. We address these question by investigating semantic-level calibration in both pre-trained and fine-tuned models. In particular, we introduce a framework for assessing semantic confidence that incorporates both existing and novel confidence measures, comparing them to a single-generation confidence measure. Furthermore, we investigate various temperature scaling methods and their effect on semantic calibration. Our experiments span both open-book and closed-book question answering datasets. Our empirical findings demonstrate that scalar temperature scaling, when appropriately applied, provides a simple, widely applicable, and effective method for improving semantic calibration in language models.},
+  selected     = {true},
+  bibtex_show  = {true}
+}
+
+@article{petrov2024universal,
+  title        = {Universal In-Context Approximation by Prompting Fully Recurrent Models},
+  author       = {Petrov, Aleksandar and Lamb, Tom and Paren, Alasdair and Torr, Philip and Bibi, Adel},
+  journal      = {Advances in Neural Information Processing Systems},
+  volume       = {37},
+  pages        = {72061--72093},
+  year         = {2024},
+  abbr         = {NeurIPS},
+  html         = {https://proceedings.neurips.cc/paper_files/paper/2024/file/848784373188ddf641079524e89e0ac9-Paper-Conference.pdf},
+  abstract     = {Zero-shot and in-context learning enable solving tasks without model fine-tuning, making them essential for developing generative model solutions. Therefore, it is crucial to understand whether a pretrained model can be prompted to approximate any function, i.e., whether it is a universal in-context approximator. While it was recently shown that transformer models do possess this property, these results rely on their attention mechanism. Hence, these findings do not apply to fully recurrent architectures like RNNs, LSTMs, and the increasingly popular SSMs. We demonstrate that RNNs, LSTMs, GRUs, Linear RNNs, and linear gated architectures such as Mamba and Hawk/Griffin can also serve be universal in-context approximators. To streamline our argument, we introduce a programming language called LSRL that compiles to these fully recurrent architectures. LSRL may be of independent interest for further studies of fully recurrent models, such as constructing interpretability benchmarks.},
+  bibtex_show  = {true}
+}
+
+@inproceedings{hemmathidden,
+  title        = {Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models},
+  author       = {Hemmat, Arshia and Davies, Adam and Lamb, Tom A and Yuan, Jianhao and Torr, Philip and Khakzar, Ashkan and Pinto, Francesco},
+  booktitle    = {The Thirty-eighth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year         = {2024},
+  abbr         = {NeurIPS},
+  html         = {https://arxiv.org/abs/2411.06287},
+  abstract     = {Despite the importance of shape perception in human vision, early neural image classifiers relied less on shape information for object recognition than other (often spurious) features. While recent research suggests that current large Vision-Language Models (VLMs) exhibit more reliance on shape, we find them to still be seriously limited in this regard. To quantify such limitations, we introduce IllusionBench, a dataset that challenges current cutting-edge VLMs to decipher shape information when the shape is represented by an arrangement of visual elements in a scene. Our extensive evaluations reveal that, while these shapes are easily detectable by human annotators, current VLMs struggle to recognize them, indicating important avenues for future work in developing more robust visual perception systems.},
+  bibtex_show  = {true}
+}
+
+@article{lamb2023faithful,
+  title        = {Faithful Knowledge Distillation},
+  author       = {Lamb, Tom A and Brunel, Rudy and Kumar, M Pawan and Torr, Philip HS and Eiras, Francisco and others},
+  journal      = {arXiv preprint arXiv:2306.04431},
+  year         = {2023},
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2306.04431},
+  arxiv        = {2306.04431},
+  abstract     = {Knowledge distillation (KD) has received much attention due to its success in compressing networks to allow for their deployment in resource-constrained systems. While the problem of adversarial robustness has been studied before in the KD setting, previous works overlook what we term the relative calibration of the student network with respect to its teacher in terms of soft confidences. In particular, we focus on two crucial questions with regard to a teacher-student pair: (i) do the teacher and student disagree at points close to correctly classified dataset examples, and (ii) is the distilled student as confident as the teacher around dataset examples? These are critical questions when considering the deployment of a smaller student network trained from a robust teacher within a safety-critical setting. To address these questions, we introduce a faithful imitation framework to discuss the relative calibration of confidences and provide empirical and certified methods to evaluate the relative calibration of a student w.r.t. its teacher. Further, to verifiably align the relative calibration incentives of the student to those of its teacher, we introduce faithful distillation. Our experiments on the MNIST, Fashion-MNIST and CIFAR-10 datasets demonstrate the need for such an analysis and the advantages of the increased verifiability of faithful distillation over alternative adversarial distillation methods.},
+  bibtex_show  = {true}
+}

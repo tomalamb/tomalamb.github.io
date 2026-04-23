@@ -1,0 +1,39 @@
+# Add coauthor names and URLs here.
+# The keys are the last name (case-sensitive), with a list of first names.
+# The url is optional. If not provided, a Google Scholar search link is used.
+
+"Torr":
+  - firstname: ["Philip", "Philip H.S.", "Philip HS"]
+    url: https://eng.ox.ac.uk/people/philip-torr/
+
+"Rudner":
+  - firstname: ["Tim", "Tim G.J.", "Tim GJ"]
+    url: https://timrudner.com/
+
+"Pinto":
+  - firstname: ["Francesco"]
+    url: https://francescopinto.github.io/
+
+"Davies":
+  - firstname: ["Adam"]
+
+"Paren":
+  - firstname: ["Alasdair"]
+
+"Petrov":
+  - firstname: ["Aleksandar"]
+
+"Bibi":
+  - firstname: ["Adel"]
+
+"Hemmat":
+  - firstname: ["Arshia"]
+
+"Ivanova":
+  - firstname: ["Desi", "Desi R."]
+
+"Eiras":
+  - firstname: ["Francisco", "Francisco Girbal"]
+
+"Kumar":
+  - firstname: ["M Pawan", "Pawan"]

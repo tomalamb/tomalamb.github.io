@@ -1,13 +1,14 @@
-# Develop override settings
-
+# Development override settings
 url: http://localhost:4000
+baseurl: ""
 
-analytics:
-  provider: false
+# Disable minification for faster builds
+jekyll-minifier:
+  enabled: false
 
-comments:
-  disqus:
-    shortname            : "mmistakes-dev"
+# Disable image processing locally (requires imagemagick)
+imagemagick:
+  enabled: false
 
 sass:
   style: expanded
