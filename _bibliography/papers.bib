@@ -1,6 +1,55 @@
 ---
 ---
 
+@article{lamb2026improving,
+  title        = {Improving Semantic Uncertainty Quantification in Language Model Question-Answering via Token-Level Temperature Scaling},
+  author       = {Lamb, Tom A and Ivanova, Desi R and Torr, Philip H S and Rudner, Tim G J},
+  journal      = {arXiv preprint arXiv:2604.07172},
+  year         = {2026},
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2604.07172},
+  arxiv        = {2604.07172},
+  abstract     = {Calibration and discrimination are both crucial aspects of semantic confidence in language models. Existing methods, particularly those using fixed-temperature heuristics, produce systematically miscalibrated and poorly discriminative semantic confidence distributions. We propose optimizing a single scalar temperature parameter as an effective solution. Our comprehensive testing shows this approach consistently improves semantic calibration, discrimination, and downstream entropy, yielding superior results compared to both heuristic baselines and more sophisticated token-level recalibration techniques when applied to question-answering tasks.},
+  selected     = {true},
+  bibtex_show  = {true}
+}
+
+@inproceedings{kim2025detecting,
+  title        = {Detecting {LLM} Hallucination Through Layer-wise Information Deficiency: Analysis of Ambiguous Prompts and Unanswerable Questions},
+  author       = {Kim, Hazel and Lamb, Tom A and Bibi, Adel and Torr, Philip and Gal, Yarin},
+  booktitle    = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  year         = {2025},
+  abbr         = {EMNLP},
+  html         = {https://arxiv.org/abs/2412.10246},
+  arxiv        = {2412.10246},
+  abstract     = {Language models often produce confident but inaccurate responses. We develop a test-time detection method examining information flow across model layers to identify hallucinations when models encounter ambiguous or insufficient inputs. Our key finding shows that hallucination manifests as usable information deficiencies in inter-layer transmissions. Rather than analyzing only final outputs, we track cross-layer dynamics to assess model reliability. The approach integrates with existing models without requiring retraining or architectural changes.},
+  bibtex_show  = {true}
+}
+
+@article{tao2025linguistic,
+  title        = {Can Large Language Models Express Uncertainty Like Human?},
+  author       = {Tao, Linwei and Yeh, Yi-Fan and Kai, Bo and Dong, Minjing and Huang, Tao and Lamb, Tom A and Yu, Jialin and Torr, Philip H S and Xu, Chang},
+  journal      = {arXiv preprint arXiv:2509.24202},
+  year         = {2025},
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2509.24202},
+  arxiv        = {2509.24202},
+  abstract     = {Large language models increasingly appear in high-stakes contexts where overconfident outputs risk misleading users. We revisit linguistic confidence -- having models convey doubt through hedging expressions like ``probably'' or ``might'' -- as an alternative to traditional confidence estimation methods. We release the first diverse, large-scale dataset of hedging expressions with human-annotated confidence scores, develop a lightweight tool converting hedges into confidence scores, conduct the first systematic study of linguistic confidence across modern LLMs and QA benchmarks, and introduce a fine-tuning framework to enhance reliability. Our findings reveal most LLMs struggle with reliable linguistic confidence, though targeted prompting can achieve competitive calibration and discriminability.},
+  bibtex_show  = {true}
+}
+
+@article{stoisser2025labelfree,
+  title        = {Towards Label-Free Biological Reasoning Synthetic Dataset Creation via Uncertainty Filtering},
+  author       = {Stoisser, Josefa Lia and Phillips, Lawrence and Misra, Aditya and Lamb, Tom A and Torr, Philip and Martell, Marc Boubnovski and Fauqueur, Julien and M{\"a}rtens, Kaspar},
+  journal      = {arXiv preprint arXiv:2510.05871},
+  year         = {2025},
+  abbr         = {arXiv},
+  html         = {https://arxiv.org/abs/2510.05871},
+  arxiv        = {2510.05871},
+  abstract     = {We propose using a model's internal confidence metrics as an alternative to expensive ground-truth labels when curating synthetic reasoning datasets. Rather than requiring manual annotation, we employ uncertainty-based filtering, which uses a model's own confidence -- quantified through established uncertainty metrics like self-consistency and predictive perplexity. When applied to biological perturbation prediction tasks, our approach demonstrates that filtered synthetic data yields superior performance compared to unfiltered alternatives, approaches ground-truth training effectiveness, and outperforms existing large reasoning model baselines.},
+  bibtex_show  = {true}
+}
+
 @inproceedings{lambfocus,
   title        = {Focus On This, Not That! Steering {LLMs} with Adaptive Feature Specification},
   author       = {Lamb, Tom A and Davies, Adam and Paren, Alasdair and Torr, Philip and Pinto, Francesco},
@@ -52,7 +101,7 @@
 
 @article{lamb2023faithful,
   title        = {Faithful Knowledge Distillation},
-  author       = {Lamb, Tom A and Brunel, Rudy and Kumar, M Pawan and Torr, Philip HS and Eiras, Francisco and others},
+  author       = {Lamb, Tom A and Brunel, Rudy and Dvijotham, Krishnamurthy DJ and Kumar, M Pawan and Torr, Philip H S and Eiras, Francisco},
   journal      = {arXiv preprint arXiv:2306.04431},
   year         = {2023},
   abbr         = {arXiv},
