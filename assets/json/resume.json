@@ -5,7 +5,7 @@
     "image": "",
     "email": "thomas.lamb@eng.ox.ac.uk",
     "url": "https://tomalamb.github.io",
-    "summary": "DPhil candidate in machine learning at the Torr Vision Group, University of Oxford. Research interests in AI safety: eliciting, producing, and giving guarantees for the safe and reliable deployment of ML models, specifically LLMs and reasoning models.",
+    "summary": "AI safety and reliable machine learning, focusing on uncertainty quantification, calibration, and generalisation in LLMs. My work develops methods for LLM reliability that combine empirical performance with formal guarantees, drawing on Bayesian inference and statistical learning theory. I study semantic calibration, uncertainty-aware inference, and adaptive steering of LLMs, alongside theoretical questions on generalisation and approximation, aiming to enable robust and trustworthy deployment of foundation and scalable oversight models in high-risk settings.",
     "location": {
       "city": "Oxford",
       "countryCode": "UK"
@@ -33,89 +33,67 @@
   },
   "work": [
     {
-      "name": "University of Oxford",
+      "name": "Apple Machine Learning Research",
+      "position": "Research Scientist Intern (Incoming)",
+      "startDate": "2026-05",
+      "endDate": "Present",
+      "summary": "Working with Sinead Williamson and Michael Kirchhof on uncertainty quantification for LLMs.",
+      "location": "Paris, France"
+    },
+    {
+      "name": "DeepMind / Torr Vision Group, University of Oxford",
       "position": "Machine Learning Research Intern",
       "startDate": "2022-07",
-      "endDate": "2022-09",
-      "summary": "Research intern funded by Google DeepMind and supervised by Francisco Girbal Eiras and Prof. Philip H. S. Torr. Introduced a faithful-imitation framework for teacher-student networks, formulated LP-based upper/lower bounds on measures of local confidence disagreement between teacher and student models, and designed a distillation method yielding verifiably more calibrated student models. Led to the paper 'Faithful Knowledge Distillation'."
+      "endDate": "2023-01",
+      "summary": "Designed a framework for faithful knowledge distillation. Derived LP-based bounds on teacher–student confidence disagreement enabling formal analysis. Developed methods yielding more calibrated student models; resulted in our paper Faithful Knowledge Distillation.",
+      "location": "Oxford, UK"
     },
     {
       "name": "University of Durham",
-      "position": "Summer Mathematics Research Student",
+      "position": "Summer Research Student",
       "startDate": "2019-07",
       "endDate": "2019-09",
-      "summary": "Collaborated with Prof. Herbert Gangl to conjecture and prove new identities relating polylogarithmic integrals over the unit square to linear combinations of multiple zeta values."
+      "summary": "Proved new identities relating polylogarithmic integrals to multiple zeta values with Prof. Herbert Gangl.",
+      "location": "Durham, UK"
     }
   ],
   "education": [
     {
       "institution": "University of Oxford",
-      "studyType": "DPhil",
-      "area": "Machine Learning",
+      "studyType": "PhD (DPhil)",
+      "area": "Machine Learning, Department of Engineering Science",
       "startDate": "2023-10",
       "endDate": "Present",
-      "summary": "Supervised by Prof. Philip H.S. Torr (University of Oxford) and Dr. Tim G.J. Rudner (University of Toronto & Vector Institute). Published at top-tier ML conferences including ICML, NeurIPS and ICLR. Research on: semantic calibration and uncertainty quantification for LLMs; steering LLMs adaptively at inference time; biases in VLMs; and universal in-context approximation of fully recurrent models including SSMs."
+      "summary": "Supervisors: Tim G. J. Rudner (University of Toronto & Vector Institute) and Philip H. S. Torr (University of Oxford). Research on AI safety and reliable ML, developing methods for LLM uncertainty, calibration, and generalisation.",
+      "location": "Oxford, UK"
     },
     {
       "institution": "University of Edinburgh",
       "studyType": "MSc",
-      "area": "Artificial Intelligence",
+      "area": "Artificial Intelligence (Distinction)",
       "startDate": "2022-09",
       "endDate": "2023-08",
-      "score": "MSc Artificial Intelligence Class Prize",
-      "summary": "Courses: Reinforcement Learning, Bayesian Statistics and MCMC Methods, Probabilistic Modeling and Reasoning, Natural Language Understanding, Generation and Machine Translation. MSc dissertation: 'Self-Supervised Learning of Tractable Generative Models', supervised by Dr. Antonio Vergari. Applied conditional composite log-likelihood estimation (CCLE) with novel patching schemes to train EiNet models."
+      "score": "MSc Artificial Intelligence Class Prize (ranked 1st overall)",
+      "summary": "Dissertation: Self-Supervised Learning of Tractable Generative Models.",
+      "location": "Edinburgh, UK"
     },
     {
       "institution": "University of Durham",
       "studyType": "MMath",
-      "area": "Mathematics",
+      "area": "Mathematics (First-Class Honours)",
       "startDate": "2016-10",
       "endDate": "2020-07",
-      "score": "John Crowther and Percy Heywood Prizes",
-      "summary": "Specialised in pure mathematics. Courses: Algebraic Topology, Riemannian Geometry, Representation Theory, Partial Differential Equations, Algebraic Number Theory, Galois Theory. MMath dissertation: 'An Introduction to Modular Forms and the Eichler-Shimura Isomorphism', supervised by Prof. Herbert Gangl."
-    }
-  ],
-  "awards": [
-    {
-      "title": "MSc Artificial Intelligence Class Prize",
-      "date": "2023",
-      "awarder": "University of Edinburgh"
-    },
-    {
-      "title": "John Crowther Prize",
-      "date": "2020",
-      "awarder": "University of Durham"
-    },
-    {
-      "title": "Percy Heywood Prize",
-      "date": "2020",
-      "awarder": "University of Durham"
+      "score": "Percy Heywood Prize; John Crowther Prize",
+      "summary": "Dissertation: An Introduction to Modular Forms and the Eichler–Shimura Isomorphism.",
+      "location": "Durham, UK"
     }
   ],
   "publications": [
-    {
-      "name": "Improving Semantic Uncertainty Quantification in Language Model Question-Answering via Token-Level Temperature Scaling",
-      "publisher": "AISTATS 2026",
-      "releaseDate": "2026",
-      "url": "https://arxiv.org/abs/2604.07172"
-    },
-    {
-      "name": "Detecting LLM Hallucination Through Layer-wise Information Deficiency: Analysis of Ambiguous Prompts and Unanswerable Questions",
-      "publisher": "EMNLP 2025",
-      "releaseDate": "2025",
-      "url": "https://arxiv.org/abs/2412.10246"
-    },
     {
       "name": "Focus On This, Not That! Steering LLMs with Adaptive Feature Specification",
       "publisher": "ICML 2025",
       "releaseDate": "2025",
       "url": "https://openreview.net/pdf?id=rbI5mOUA8Z"
-    },
-    {
-      "name": "Semantic-Level Confidence Calibration of Language Models via Temperature Scaling",
-      "publisher": "ICLR Workshop 2025",
-      "releaseDate": "2025",
-      "url": "https://openreview.net/pdf?id=22UNXHzBgt"
     },
     {
       "name": "Universal In-Context Approximation by Prompting Fully Recurrent Models",
@@ -130,10 +108,95 @@
       "url": "https://arxiv.org/abs/2411.06287"
     },
     {
+      "name": "Improving Semantic Uncertainty Quantification in Language Model Question-Answering via Token-Level Temperature Scaling",
+      "publisher": "AISTATS 2025",
+      "releaseDate": "2025",
+      "url": "https://arxiv.org/abs/2604.07172"
+    },
+    {
+      "name": "Detecting LLM Hallucination Through Layer-wise Information Deficiency: Analysis of Unanswerable Questions and Ambiguous Prompts",
+      "publisher": "EMNLP 2025",
+      "releaseDate": "2025",
+      "url": "https://arxiv.org/abs/2412.10246"
+    },
+    {
+      "name": "Towards Label-Free Biological Reasoning Synthetic Dataset Creation via Uncertainty Filtering",
+      "publisher": "NeurIPS Workshop on Efficient Reasoning 2025",
+      "releaseDate": "2025",
+      "url": "https://arxiv.org/abs/2510.05871"
+    },
+    {
+      "name": "Can Large Language Models Express Uncertainty Like Humans?",
+      "publisher": "arXiv 2025",
+      "releaseDate": "2025",
+      "url": "https://arxiv.org/abs/2509.24202"
+    },
+    {
       "name": "Faithful Knowledge Distillation",
       "publisher": "arXiv 2023",
       "releaseDate": "2023",
       "url": "https://arxiv.org/abs/2306.04431"
+    }
+  ],
+  "awards": [
+    {
+      "title": "MSc Artificial Intelligence Class Prize",
+      "date": "2023",
+      "awarder": "University of Edinburgh",
+      "summary": "Awarded to the student who attained the highest overall mark in the MSc Artificial Intelligence course."
+    },
+    {
+      "title": "Percy Heywood Prize",
+      "date": "2020",
+      "awarder": "Department of Mathematical Sciences, University of Durham",
+      "summary": "Awarded to a student graduating with an MMath whose performance is outstanding in the final year."
+    },
+    {
+      "title": "John Crowther Prize",
+      "date": "2019",
+      "awarder": "University College, University of Durham",
+      "summary": "Awarded for performance in third-year Mathematics examinations."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Python", "Bash", "Java", "SQL", "Matlab"]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": ["PyTorch", "GPyTorch", "Transformers", "OpenAI", "WandB", "scikit-learn", "NumPy", "Pandas", "SciPy"]
+    },
+    {
+      "name": "Research Areas",
+      "keywords": ["AI safety", "LLM generalisation", "statistical learning theory", "LLMs", "NLP", "uncertainty quantification", "calibration", "Bayesian methods", "variational inference"]
+    },
+    {
+      "name": "Other Tools",
+      "keywords": ["Git", "GurobiPy", "NLTK", "Datasets"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "University of Oxford",
+      "position": "OXAi Education Team Member",
+      "startDate": "2023-09",
+      "endDate": "2024-06",
+      "summary": "Created blog posts and teaching materials on machine learning, ranging from introductory concepts to advanced topics for undergraduates and researchers."
+    },
+    {
+      "organization": "University of Oxford and Online",
+      "position": "Mathematics and AI Tutor",
+      "startDate": "2020-09",
+      "endDate": "Present",
+      "summary": "Teach MSc-level Reinforcement Learning, Statistical Learning Theory (OPUS program) and tutor GCSE/A-Level and undergraduate mathematics."
+    },
+    {
+      "organization": "University of Durham",
+      "position": "Mathematics Teaching Assistant",
+      "startDate": "2019-10",
+      "endDate": "2020-06",
+      "summary": "Marked and provided detailed feedback on second-year Algebra coursework, ensuring clarity and rigor."
     }
   ]
 }

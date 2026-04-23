@@ -2,9 +2,11 @@
 layout: default
 ---
 <div class="post">
+  {% if page.subtitle and page.subtitle != '' %}
   <header class="post-header">
     <p class="desc">{{ page.subtitle }}</p>
   </header>
+  {% endif %}
 
   <article>
     {% if page.profile %}
@@ -32,20 +34,10 @@ layout: default
 
     <div>{{ content }}</div>
 
-    <!-- News -->
+    <!-- News / Updates -->
     {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+      <h2>updates</h2>
       {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">updates</a>
-      </h2>
-      {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->

@@ -131,10 +131,12 @@ collections:
     permalink: /:collection/:title/
 
 announcements:
-  enabled: false
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 
@@ -532,4 +534,6 @@ jsonresume:
   - work
   - education
   - publications
+  - volunteer
   - awards
+  - skills

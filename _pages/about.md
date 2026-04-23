@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: DPhil Candidate, <a href="https://torrvision.com/">TVG</a>, University of Oxford.
+subtitle:
 
 profile:
   align: left
   image: profile.jpg
-  image_circular: true
+  image_circular: false
   more_info:
 
-news: false
+news: true
 selected_papers: true
 social: true
 ---
@@ -22,10 +22,3 @@ I have several publications at top-tier ML conferences including ICML, NeurIPS a
 In the past, I used to be a little better at mathematics. You can find some related material and work in the [resources](/resources/) section.
 
 Feel free to reach out to chat or discuss anything ML or mathematics related!
-
-<div style="clear: both;"></div>
-
-<figure style="text-align: center; margin-top: 2rem;">
-  <img src="/assets/img/scotish-castle.jpeg" alt="Castle Stalker" style="max-width: 60%; border-radius: 4px;" />
-  <figcaption>Castle Stalker, Argyll, Scotland.</figcaption>
-</figure>
