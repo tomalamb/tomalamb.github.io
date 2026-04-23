@@ -5,7 +5,7 @@
     "image": "",
     "email": "thomas.lamb@eng.ox.ac.uk",
     "url": "https://tomalamb.github.io",
-    "summary": "AI safety and reliable machine learning, focusing on uncertainty quantification, calibration, and generalisation in LLMs. My work develops methods for LLM reliability that combine empirical performance with formal guarantees, drawing on Bayesian inference and statistical learning theory. I study semantic calibration, uncertainty-aware inference, and adaptive steering of LLMs, alongside theoretical questions on generalisation and approximation, aiming to enable robust and trustworthy deployment of foundation and scalable oversight models in high-risk settings.",
+    "summary": "AI safety, robustness, and reliable machine learning, with an emphasis on uncertainty quantification and generalisation, particularly in the context of LLMs. My work spans semantic calibration and uncertainty quantification for LLMs; steering LLMs adaptively at inference time; biases in VLMs; and giving formal statements on universal in-context approximation of fully recurrent models including SSMs.",
     "location": {
       "city": "Oxford",
       "countryCode": "UK"
