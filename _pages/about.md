@@ -23,7 +23,9 @@ In the past, I used to be a little better at mathematics. You can find some rela
 
 Feel free to reach out to chat or discuss anything ML or mathematics related!
 
+<div style="clear: both;"></div>
+
 <figure style="text-align: center; margin-top: 2rem;">
-  <img src="/assets/img/scotish-castle.jpeg" alt="Castle Stalker" style="max-width: 80%; border-radius: 4px;" />
+  <img src="/assets/img/scotish-castle.jpeg" alt="Castle Stalker" style="max-width: 60%; border-radius: 4px;" />
   <figcaption>Castle Stalker, Argyll, Scotland.</figcaption>
 </figure>
