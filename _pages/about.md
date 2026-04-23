@@ -7,7 +7,7 @@ subtitle: DPhil Candidate, <a href="https://torrvision.com/">TVG</a>, University
 profile:
   align: left
   image: profile.jpg
-  image_circular: false
+  image_circular: true
   more_info:
 
 news: false
