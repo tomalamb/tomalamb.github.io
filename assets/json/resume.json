@@ -54,7 +54,7 @@
       "area": "Machine Learning",
       "startDate": "2023-10",
       "endDate": "Present",
-      "summary": "Supervised by Prof. Philip H.S. Torr (University of Oxford) and Dr. Tim G.J. Rudner (NYU). Published at top-tier ML conferences including ICML, NeurIPS and ICLR. Research on: semantic calibration and uncertainty quantification for LLMs; steering LLMs adaptively at inference time; biases in VLMs; and universal in-context approximation of fully recurrent models including SSMs."
+      "summary": "Supervised by Prof. Philip H.S. Torr (University of Oxford) and Dr. Tim G.J. Rudner (University of Toronto & Vector Institute). Published at top-tier ML conferences including ICML, NeurIPS and ICLR. Research on: semantic calibration and uncertainty quantification for LLMs; steering LLMs adaptively at inference time; biases in VLMs; and universal in-context approximation of fully recurrent models including SSMs."
     },
     {
       "institution": "University of Edinburgh",
@@ -94,6 +94,18 @@
   ],
   "publications": [
     {
+      "name": "Improving Semantic Uncertainty Quantification in Language Model Question-Answering via Token-Level Temperature Scaling",
+      "publisher": "AISTATS 2026",
+      "releaseDate": "2026",
+      "url": "https://arxiv.org/abs/2604.07172"
+    },
+    {
+      "name": "Detecting LLM Hallucination Through Layer-wise Information Deficiency: Analysis of Ambiguous Prompts and Unanswerable Questions",
+      "publisher": "EMNLP 2025",
+      "releaseDate": "2025",
+      "url": "https://arxiv.org/abs/2412.10246"
+    },
+    {
       "name": "Focus On This, Not That! Steering LLMs with Adaptive Feature Specification",
       "publisher": "ICML 2025",
       "releaseDate": "2025",
@@ -101,7 +113,7 @@
     },
     {
       "name": "Semantic-Level Confidence Calibration of Language Models via Temperature Scaling",
-      "publisher": "ICLR Workshop: QUESTION 2025",
+      "publisher": "ICLR Workshop 2025",
       "releaseDate": "2025",
       "url": "https://openreview.net/pdf?id=22UNXHzBgt"
     },

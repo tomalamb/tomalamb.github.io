@@ -239,7 +239,7 @@ display_categories: []
 
 scholar:
   last_name: [Lamb]
-  first_name: [Tom, Tom A., Thomas A., T., T. A.]
+  first_name: [Tom, Tom A, Tom A., Thomas A., T., T. A.]
 
   style: apa
   locale: en

@@ -1,64 +1,63 @@
 # Add coauthor names and URLs here.
-# The keys are the last name (case-sensitive), with a list of first names.
-# The url is optional. If not provided, a Google Scholar search link is used.
+# Keys must be lowercase (the bib template lowercases last names for lookup).
 
-"Torr":
-  - firstname: ["Philip", "Philip H.S.", "Philip HS"]
+"torr":
+  - firstname: ["Philip", "Philip H.S.", "Philip H S", "Philip HS"]
     url: https://eng.ox.ac.uk/people/philip-torr/
 
-"Rudner":
-  - firstname: ["Tim", "Tim G.J.", "Tim GJ"]
+"rudner":
+  - firstname: ["Tim", "Tim G.J.", "Tim G J", "Tim GJ"]
     url: https://timrudner.com/
 
-"Pinto":
+"pinto":
   - firstname: ["Francesco"]
     url: https://francescopinto.github.io/
 
-"Davies":
+"davies":
   - firstname: ["Adam"]
 
-"Paren":
+"paren":
   - firstname: ["Alasdair"]
 
-"Petrov":
+"petrov":
   - firstname: ["Aleksandar"]
 
-"Bibi":
+"bibi":
   - firstname: ["Adel"]
 
-"Hemmat":
+"hemmat":
   - firstname: ["Arshia"]
 
-"Ivanova":
-  - firstname: ["Desi", "Desi R."]
+"ivanova":
+  - firstname: ["Desi", "Desi R", "Desi R."]
 
-"Eiras":
+"eiras":
   - firstname: ["Francisco", "Francisco Girbal"]
 
-"Kumar":
+"kumar":
   - firstname: ["M Pawan", "Pawan"]
 
-"Kim":
+"kim":
   - firstname: ["Hazel"]
 
-"Gal":
+"gal":
   - firstname: ["Yarin"]
     url: https://www.cs.ox.ac.uk/people/yarin.gal/
 
-"Dvijotham":
+"dvijotham":
   - firstname: ["Krishnamurthy", "Krishnamurthy DJ"]
 
-"Brunel":
+"brunel":
   - firstname: ["Rudy"]
 
-"Tao":
+"tao":
   - firstname: ["Linwei"]
 
-"Xu":
+"xu":
   - firstname: ["Chang"]
 
-"Stoisser":
+"stoisser":
   - firstname: ["Josefa", "Josefa Lia"]
 
-"Märtens":
+"martens":
   - firstname: ["Kaspar"]
