@@ -5,7 +5,7 @@ permalink: /
 subtitle: DPhil Candidate, <a href="https://torrvision.com/">TVG</a>, University of Oxford.
 
 profile:
-  align: right
+  align: left
   image: profile.jpg
   image_circular: false
   more_info:
