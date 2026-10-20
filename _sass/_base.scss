@@ -774,7 +774,8 @@ footer.sticky-bottom {
       }
 
       .publication-topic--uncertainty,
-      .publication-topic--calibration {
+      .publication-topic--calibration,
+      .publication-topic--relative-calibration {
         background: rgba($blue-color, 0.12);
         border-color: rgba($blue-color, 0.28);
       }
@@ -793,7 +794,6 @@ footer.sticky-bottom {
       }
 
       .publication-topic--robustness,
-      .publication-topic--distillation,
       .publication-topic--vlms,
       .publication-topic--visual-reasoning {
         background: rgba($orange-color, 0.13);

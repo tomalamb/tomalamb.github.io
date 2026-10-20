@@ -186,56 +186,5 @@
       "awarder": "University College, University of Durham",
       "summary": "Awarded for performance in third-year Mathematics examinations."
     }
-  ],
-  "talks": [
-    {
-      "title": "Improving Semantic Uncertainty Quantification in LLMs via Temperature Scaling",
-      "date": "2025-09",
-      "location": "Oxford",
-      "host": "Novo Nordisk"
-    },
-    {
-      "title": "Semantic-Level Confidence Calibration of Language Models via Temperature Scaling",
-      "date": "2025-03",
-      "location": "Oxford",
-      "host": "University of Oxford"
-    },
-    {
-      "title": "Towards Safety and Transparency: Addressing Bias and Uncertainty Quantification in LLMs",
-      "date": "2024-10",
-      "location": "London",
-      "host": "Huawei"
-    }
-  ],
-  "teaching": [
-    {
-      "organization": "University of Oxford and Online",
-      "position": "Mathematics and AI Tutor",
-      "startDate": "2020-09",
-      "endDate": "Present",
-      "summary": "Teach MSc-level Reinforcement Learning and Statistical Learning Theory (OPUS program), and tutor GCSE/A-Level and undergraduate mathematics.",
-      "location": "Oxford, UK & Remote"
-    },
-    {
-      "organization": "University of Durham",
-      "position": "Mathematics Teaching Assistant",
-      "startDate": "2019-10",
-      "endDate": "2020-06",
-      "summary": "Marked and provided detailed feedback on second-year Algebra coursework, ensuring clarity and rigor."
-    }
-  ],
-  "references": [
-    {
-      "name": "Dr. Tim G. J. Rudner",
-      "position": "Assistant Professor",
-      "affiliation": "University of Toronto / Vector Institute",
-      "reference": "Contact details available upon request"
-    },
-    {
-      "name": "Prof. Philip H. S. Torr",
-      "position": "Professor of Engineering Science",
-      "affiliation": "University of Oxford",
-      "reference": "Contact details available upon request"
-    }
   ]
 }
