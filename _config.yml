@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Tom A. Lamb
 first_name: Tom
-middle_name:
+middle_name: A.
 last_name: Lamb
 email: thomas.lamb@eng.ox.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -533,7 +533,7 @@ jsonresume:
   - basics
   - work
   - education
-  - publications
-  - volunteer
   - awards
-  - skills
+  - talks
+  - teaching
+  - references

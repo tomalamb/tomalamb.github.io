@@ -1,7 +1,7 @@
 {
   "basics": {
-    "name": "Tom Lamb",
-    "label": "DPhil Candidate in Machine Learning",
+    "name": "Tom A. Lamb",
+    "label": "PhD Student in Machine Learning, University of Oxford",
     "image": "",
     "email": "thomas.lamb@eng.ox.ac.uk",
     "url": "https://tomalamb.github.io",
@@ -36,8 +36,9 @@
       "name": "Apple Machine Learning Research",
       "position": "Research Scientist Intern",
       "startDate": "2026-05",
-      "endDate": "2026-09",
-      "summary": "Worked with Sinead Williamson and Michael Kirchhof on uncertainty quantification for LLMs.",
+      "endDate": "2026-10",
+      "summary": "Working with Sinead Williamson and Michael Kirchhof on post-training for budget-aware agents.",
+      "highlights": ["Internship culminated in the paper ‘Rewards for Budget-Aware Multi-Turn Agents That Adapt to Arbitrary Test-Time Constraints’."],
       "location": "Paris, France"
     },
     {
@@ -64,7 +65,10 @@
       "area": "Machine Learning, Department of Engineering Science",
       "startDate": "2023-10",
       "endDate": "Present",
-      "summary": "Supervisors: Tim G. J. Rudner (University of Toronto & Vector Institute) and Philip H. S. Torr (University of Oxford). Research on AI safety and reliable ML, developing methods for LLM uncertainty, calibration, and generalisation.",
+      "courses": [
+        "Supervisors: Tim G. J. Rudner (University of Toronto & Vector Institute) and Philip H. S. Torr (University of Oxford)",
+        "Research on AI safety and reliable ML, developing methods for LLM uncertainty, calibration, and generalisation."
+      ],
       "location": "Oxford, UK"
     },
     {
@@ -73,8 +77,10 @@
       "area": "Artificial Intelligence (Distinction)",
       "startDate": "2022-09",
       "endDate": "2023-08",
-      "score": "MSc Artificial Intelligence Class Prize (ranked 1st overall)",
-      "summary": "Dissertation: Self-Supervised Learning of Tractable Generative Models.",
+      "courses": [
+        "MSc Artificial Intelligence Class Prize (ranked 1st overall)",
+        "Dissertation: Self-Supervised Learning of Tractable Generative Models"
+      ],
       "location": "Edinburgh, UK"
     },
     {
@@ -83,8 +89,10 @@
       "area": "Mathematics (First-Class Honours)",
       "startDate": "2016-10",
       "endDate": "2020-07",
-      "score": "Percy Heywood Prize; John Crowther Prize",
-      "summary": "Dissertation: An Introduction to Modular Forms and the Eichler–Shimura Isomorphism.",
+      "courses": [
+        "Percy Heywood Prize; John Crowther Prize",
+        "Dissertation: An Introduction to Modular Forms and the Eichler–Shimura Isomorphism"
+      ],
       "location": "Durham, UK"
     }
   ],
@@ -93,54 +101,69 @@
       "name": "Tight PAC-Bayes Generalisation Guarantees for Large Language Model Safety Monitoring",
       "publisher": "NeurIPS 2026",
       "releaseDate": "2026",
+      "summary": "T. A. Lamb, P. Torr, T. G. J. Rudner",
       "url": "https://openreview.net/forum?id=megigqX2Rj"
+    },
+    {
+      "name": "Improving Semantic Uncertainty Quantification in Language Model Question-Answering via Token-Level Temperature Scaling",
+      "publisher": "AISTATS 2026",
+      "releaseDate": "2026",
+      "summary": "T. A. Lamb, D. R. Ivanova, P. H. S. Torr, T. G. J. Rudner",
+      "url": "https://arxiv.org/abs/2604.07172"
+    },
+    {
+      "name": "Rewards for Budget-Aware Multi-Turn Agents That Adapt to Arbitrary Test-Time Constraints",
+      "publisher": "Preprint 2026",
+      "releaseDate": "2026",
+      "summary": "T. A. Lamb, A. Golinski, E. Gualdoni, S. Williamson, M. Kirchhof"
     },
     {
       "name": "Focus On This, Not That! Steering LLMs with Adaptive Feature Specification",
       "publisher": "ICML 2025",
       "releaseDate": "2025",
+      "summary": "T. A. Lamb, A. Davies, A. Paren, P. H. S. Torr, F. Pinto",
       "url": "https://openreview.net/pdf?id=rbI5mOUA8Z"
     },
     {
       "name": "Universal In-Context Approximation by Prompting Fully Recurrent Models",
       "publisher": "NeurIPS 2024",
       "releaseDate": "2024",
+      "summary": "A. Petrov, T. A. Lamb, A. Paren, P. H. S. Torr, A. Bibi",
       "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/848784373188ddf641079524e89e0ac9-Paper-Conference.pdf"
     },
     {
       "name": "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models",
-      "publisher": "NeurIPS Datasets and Benchmarks 2024",
+      "publisher": "NeurIPS 2024",
       "releaseDate": "2024",
+      "summary": "A. Hemmat, A. Davies, T. A. Lamb, J. Yuan, P. H. S. Torr, A. Khakzar, F. Pinto",
       "url": "https://arxiv.org/abs/2411.06287"
-    },
-    {
-      "name": "Improving Semantic Uncertainty Quantification in Language Model Question-Answering via Token-Level Temperature Scaling",
-      "publisher": "AISTATS 2026",
-      "releaseDate": "2026",
-      "url": "https://arxiv.org/abs/2604.07172"
     },
     {
       "name": "Detecting LLM Hallucination Through Layer-wise Information Deficiency: Analysis of Unanswerable Questions and Ambiguous Prompts",
       "publisher": "EMNLP 2025",
       "releaseDate": "2025",
+      "summary": "H. Kim, T. A. Lamb, A. Bibi, P. H. S. Torr, Y. Gal",
       "url": "https://arxiv.org/abs/2412.10246"
     },
     {
       "name": "Towards Label-Free Biological Reasoning Synthetic Dataset Creation via Uncertainty Filtering",
       "publisher": "NeurIPS Workshop on Efficient Reasoning 2025",
       "releaseDate": "2025",
+      "summary": "J. L. Stoisser, L. Phillips, A. Misra, T. A. Lamb, P. H. S. Torr, M. B. Martell, J. Fauqueur, K. Märtens",
       "url": "https://arxiv.org/abs/2510.05871"
     },
     {
       "name": "Can Large Language Models Express Uncertainty Like Humans?",
       "publisher": "arXiv 2025",
       "releaseDate": "2025",
+      "summary": "L. Tao, Y.-F. Yeh, B. Kai, M. Dong, T. Huang, T. A. Lamb, J. Yu, P. H. S. Torr, C. Xu",
       "url": "https://arxiv.org/abs/2509.24202"
     },
     {
       "name": "Faithful Knowledge Distillation",
-      "publisher": "arXiv 2023",
+      "publisher": "Preprint 2023",
       "releaseDate": "2023",
+      "summary": "T. A. Lamb, R. Bunel, K. Dvijotham, M. P. Kumar, P. H. S. Torr, F. Eiras",
       "url": "https://arxiv.org/abs/2306.04431"
     }
   ],
@@ -164,38 +187,34 @@
       "summary": "Awarded for performance in third-year Mathematics examinations."
     }
   ],
-  "skills": [
+  "talks": [
     {
-      "name": "Programming Languages",
-      "keywords": ["Python", "Bash", "Java", "SQL", "Matlab"]
+      "title": "Improving Semantic Uncertainty Quantification in LLMs via Temperature Scaling",
+      "date": "2025-09",
+      "location": "Oxford",
+      "host": "Novo Nordisk"
     },
     {
-      "name": "Machine Learning",
-      "keywords": ["PyTorch", "GPyTorch", "Transformers", "OpenAI", "WandB", "scikit-learn", "NumPy", "Pandas", "SciPy"]
+      "title": "Semantic-Level Confidence Calibration of Language Models via Temperature Scaling",
+      "date": "2025-03",
+      "location": "Oxford",
+      "host": "University of Oxford"
     },
     {
-      "name": "Research Areas",
-      "keywords": ["AI safety", "LLM generalisation", "statistical learning theory", "LLMs", "NLP", "uncertainty quantification", "calibration", "Bayesian methods", "variational inference"]
-    },
-    {
-      "name": "Other Tools",
-      "keywords": ["Git", "GurobiPy", "NLTK", "Datasets"]
+      "title": "Towards Safety and Transparency: Addressing Bias and Uncertainty Quantification in LLMs",
+      "date": "2024-10",
+      "location": "London",
+      "host": "Huawei"
     }
   ],
-  "volunteer": [
-    {
-      "organization": "University of Oxford",
-      "position": "OXAi Education Team Member",
-      "startDate": "2023-09",
-      "endDate": "2024-06",
-      "summary": "Created blog posts and teaching materials on machine learning, ranging from introductory concepts to advanced topics for undergraduates and researchers."
-    },
+  "teaching": [
     {
       "organization": "University of Oxford and Online",
       "position": "Mathematics and AI Tutor",
       "startDate": "2020-09",
       "endDate": "Present",
-      "summary": "Teach MSc-level Reinforcement Learning, Statistical Learning Theory (OPUS program) and tutor GCSE/A-Level and undergraduate mathematics."
+      "summary": "Teach MSc-level Reinforcement Learning and Statistical Learning Theory (OPUS program), and tutor GCSE/A-Level and undergraduate mathematics.",
+      "location": "Oxford, UK & Remote"
     },
     {
       "organization": "University of Durham",
@@ -203,6 +222,20 @@
       "startDate": "2019-10",
       "endDate": "2020-06",
       "summary": "Marked and provided detailed feedback on second-year Algebra coursework, ensuring clarity and rigor."
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Tim G. J. Rudner",
+      "position": "Assistant Professor",
+      "affiliation": "University of Toronto / Vector Institute",
+      "reference": "Contact details available upon request"
+    },
+    {
+      "name": "Prof. Philip H. S. Torr",
+      "position": "Professor of Engineering Science",
+      "affiliation": "University of Oxford",
+      "reference": "Contact details available upon request"
     }
   ]
 }

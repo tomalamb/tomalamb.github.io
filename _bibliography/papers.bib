@@ -38,7 +38,7 @@
   arxiv        = {2412.10246},
   abstract     = {Language models often produce confident but inaccurate responses. We develop a test-time detection method examining information flow across model layers to identify hallucinations when models encounter ambiguous or insufficient inputs. Our key finding shows that hallucination manifests as usable information deficiencies in inter-layer transmissions. Rather than analyzing only final outputs, we track cross-layer dynamics to assess model reliability. The approach integrates with existing models without requiring retraining or architectural changes.},
   selected     = {true},
-  topics       = {Hallucination detection, Uncertainty},
+  topics       = {Hallucinations, Uncertainty},
   bibtex_show  = {true}
 }
 
@@ -51,6 +51,7 @@
   html         = {https://arxiv.org/abs/2509.24202},
   arxiv        = {2509.24202},
   abstract     = {Large language models increasingly appear in high-stakes contexts where overconfident outputs risk misleading users. We revisit linguistic confidence -- having models convey doubt through hedging expressions like ``probably'' or ``might'' -- as an alternative to traditional confidence estimation methods. We release the first diverse, large-scale dataset of hedging expressions with human-annotated confidence scores, develop a lightweight tool converting hedges into confidence scores, conduct the first systematic study of linguistic confidence across modern LLMs and QA benchmarks, and introduce a fine-tuning framework to enhance reliability. Our findings reveal most LLMs struggle with reliable linguistic confidence, though targeted prompting can achieve competitive calibration and discriminability.},
+  topics       = {Uncertainty, Calibration},
   bibtex_show  = {true}
 }
 
@@ -63,6 +64,7 @@
   html         = {https://arxiv.org/abs/2510.05871},
   arxiv        = {2510.05871},
   abstract     = {We propose using a model's internal confidence metrics as an alternative to expensive ground-truth labels when curating synthetic reasoning datasets. Rather than requiring manual annotation, we employ uncertainty-based filtering, which uses a model's own confidence -- quantified through established uncertainty metrics like self-consistency and predictive perplexity. When applied to biological perturbation prediction tasks, our approach demonstrates that filtered synthetic data yields superior performance compared to unfiltered alternatives, approaches ground-truth training effectiveness, and outperforms existing large reasoning model baselines.},
+  topics       = {Uncertainty, Reasoning},
   bibtex_show  = {true}
 }
 
@@ -76,7 +78,7 @@
   arxiv        = {2503.10326},
   abstract     = {Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.},
   selected     = {true},
-  topics       = {LLM steering, Robustness},
+  topics       = {Steering, Robustness},
   bibtex_show  = {true}
 }
 
@@ -88,6 +90,7 @@
   abbr         = {ICLR},
   html         = {https://openreview.net/pdf?id=22UNXHzBgt},
   abstract     = {Calibration of language models is typically studied at the token level, with scalar temperature scaling serving as the primary approach for recalibrating models. Recent multi-sampling techniques allow us to elicit semantic uncertainty measures from language models. However, these techniques focus on summary statistics of the limited existing semantic confidence distributions rather than on how well-calibrated these distributions are, a crucial factor in ensuring that the resulting semantic likelihoods are both meaningful and reliable. In this paper, we investigate whether and how temperature scaling, which directly influences generative diversity and token-level calibration, affects semantic calibration. We address these question by investigating semantic-level calibration in both pre-trained and fine-tuned models. In particular, we introduce a framework for assessing semantic confidence that incorporates both existing and novel confidence measures, comparing them to a single-generation confidence measure. Furthermore, we investigate various temperature scaling methods and their effect on semantic calibration. Our experiments span both open-book and closed-book question answering datasets. Our empirical findings demonstrate that scalar temperature scaling, when appropriately applied, provides a simple, widely applicable, and effective method for improving semantic calibration in language models.},
+  topics       = {Uncertainty, Calibration},
   bibtex_show  = {true}
 }
 
@@ -128,5 +131,6 @@
   html         = {https://arxiv.org/abs/2306.04431},
   arxiv        = {2306.04431},
   abstract     = {Knowledge distillation (KD) has received much attention due to its success in compressing networks to allow for their deployment in resource-constrained systems. While the problem of adversarial robustness has been studied before in the KD setting, previous works overlook what we term the relative calibration of the student network with respect to its teacher in terms of soft confidences. In particular, we focus on two crucial questions with regard to a teacher-student pair: (i) do the teacher and student disagree at points close to correctly classified dataset examples, and (ii) is the distilled student as confident as the teacher around dataset examples? These are critical questions when considering the deployment of a smaller student network trained from a robust teacher within a safety-critical setting. To address these questions, we introduce a faithful imitation framework to discuss the relative calibration of confidences and provide empirical and certified methods to evaluate the relative calibration of a student w.r.t. its teacher. Further, to verifiably align the relative calibration incentives of the student to those of its teacher, we introduce faithful distillation. Our experiments on the MNIST, Fashion-MNIST and CIFAR-10 datasets demonstrate the need for such an analysis and the advantages of the increased verifiability of faithful distillation over alternative adversarial distillation methods.},
+  topics       = {Distillation, Calibration},
   bibtex_show  = {true}
 }
