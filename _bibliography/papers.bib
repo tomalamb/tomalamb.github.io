@@ -4,13 +4,13 @@
 @inproceedings{lamb2026tight,
   title        = {Tight {PAC}-{Bayes} Generalisation Guarantees for Large Language Model Safety Monitoring},
   author       = {Lamb, Tom A and Torr, Philip and Rudner, Tim G J},
-  booktitle    = {ICML Workshop on Foundations of Generalization in Modern Machine Learning (FoGen)},
+  booktitle    = {Advances in Neural Information Processing Systems},
   year         = {2026},
-  month        = may,
-  abbr         = {ICML FoGen},
+  abbr         = {NeurIPS},
   html         = {https://openreview.net/forum?id=megigqX2Rj},
   abstract     = {We develop PAC-Bayes certification methods for LLM-based safety monitoring that produce non-vacuous generalisation guarantees even with limited safety alignment data. Our key finding is that highly compressed PEFT adaptations yield extremely short adaptation description lengths, enabling informative and often tight guarantees that certify both classification risk and predictive uncertainty. We introduce LoRA-GT, a quantisation technique that reduces adapter description length while maintaining performance, and show empirically that the compressibility of adaptations directly correlates with certification strength: compressed adaptations exhibit minimal degradation in performance while enabling substantially stronger certification, suggesting that simpler safety adaptations may naturally be more certifiable. We further show that functional distortion serves as a practical tool for identifying simple, certifiable safety models.},
   selected     = {true},
+  topics       = {AI safety, Generalisation, Uncertainty},
   bibtex_show  = {true}
 }
 
@@ -24,6 +24,7 @@
   arxiv        = {2604.07172},
   abstract     = {Calibration and discrimination are both crucial aspects of semantic confidence in language models. Existing methods, particularly those using fixed-temperature heuristics, produce systematically miscalibrated and poorly discriminative semantic confidence distributions. We propose optimizing a single scalar temperature parameter as an effective solution. Our comprehensive testing shows this approach consistently improves semantic calibration, discrimination, and downstream entropy, yielding superior results compared to both heuristic baselines and more sophisticated token-level recalibration techniques when applied to question-answering tasks.},
   selected     = {true},
+  topics       = {Uncertainty, Calibration},
   bibtex_show  = {true}
 }
 
@@ -37,6 +38,7 @@
   arxiv        = {2412.10246},
   abstract     = {Language models often produce confident but inaccurate responses. We develop a test-time detection method examining information flow across model layers to identify hallucinations when models encounter ambiguous or insufficient inputs. Our key finding shows that hallucination manifests as usable information deficiencies in inter-layer transmissions. Rather than analyzing only final outputs, we track cross-layer dynamics to assess model reliability. The approach integrates with existing models without requiring retraining or architectural changes.},
   selected     = {true},
+  topics       = {Hallucination detection, Uncertainty},
   bibtex_show  = {true}
 }
 
@@ -74,6 +76,7 @@
   arxiv        = {2503.10326},
   abstract     = {Despite the success of Instruction Tuning (IT) in training large language models (LLMs), such models often leverage spurious or biased features learnt from their training data and can become misaligned, leading to undesired behaviours. While existing techniques can steer model behaviour at inference-time, they are often post-hoc and do not embed steering as an intrinsic model feature. In this work, we introduce Focus Instruction Tuning (FIT), which trains LLMs to condition their responses by focusing on specific features whilst ignoring others, leading to different behaviours based on what features are specified. Across diverse benchmarks, we demonstrate that FIT: (i) successfully steers behaviour at inference time; (ii) increases robustness by amplifying core task signals and down-weighting spurious cues; (iii) mitigates social bias by suppressing demographic attributes; and (iv) generalises under distribution shifts and to previously unseen focus features. FIT therefore offers a lightweight, intrinsic mechanism for building more robust, fair, and easily controllable LLMs.},
   selected     = {true},
+  topics       = {LLM steering, Robustness},
   bibtex_show  = {true}
 }
 
@@ -99,6 +102,7 @@
   html         = {https://proceedings.neurips.cc/paper_files/paper/2024/file/848784373188ddf641079524e89e0ac9-Paper-Conference.pdf},
   abstract     = {Zero-shot and in-context learning enable solving tasks without model fine-tuning, making them essential for developing generative model solutions. Therefore, it is crucial to understand whether a pretrained model can be prompted to approximate any function, i.e., whether it is a universal in-context approximator. While it was recently shown that transformer models do possess this property, these results rely on their attention mechanism. Hence, these findings do not apply to fully recurrent architectures like RNNs, LSTMs, and the increasingly popular SSMs. We demonstrate that RNNs, LSTMs, GRUs, Linear RNNs, and linear gated architectures such as Mamba and Hawk/Griffin can also serve be universal in-context approximators. To streamline our argument, we introduce a programming language called LSRL that compiles to these fully recurrent architectures. LSRL may be of independent interest for further studies of fully recurrent models, such as constructing interpretability benchmarks.},
   selected     = {true},
+  topics       = {Theory, In-context learning},
   bibtex_show  = {true}
 }
 
@@ -111,6 +115,7 @@
   html         = {https://arxiv.org/abs/2411.06287},
   abstract     = {Despite the importance of shape perception in human vision, early neural image classifiers relied less on shape information for object recognition than other (often spurious) features. While recent research suggests that current large Vision-Language Models (VLMs) exhibit more reliance on shape, we find them to still be seriously limited in this regard. To quantify such limitations, we introduce IllusionBench, a dataset that challenges current cutting-edge VLMs to decipher shape information when the shape is represented by an arrangement of visual elements in a scene. Our extensive evaluations reveal that, while these shapes are easily detectable by human annotators, current VLMs struggle to recognize them, indicating important avenues for future work in developing more robust visual perception systems.},
   selected     = {true},
+  topics       = {VLMs, Visual reasoning},
   bibtex_show  = {true}
 }
 

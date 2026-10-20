@@ -5,7 +5,7 @@
     "image": "",
     "email": "thomas.lamb@eng.ox.ac.uk",
     "url": "https://tomalamb.github.io",
-    "summary": "AI safety, robustness, and reliable machine learning, with an emphasis on uncertainty quantification and generalisation, particularly in the context of LLMs. My work spans semantic calibration and uncertainty quantification for LLMs; steering LLMs adaptively at inference time; biases in VLMs; and giving formal statements on universal in-context approximation of fully recurrent models including SSMs.",
+    "summary": "My research focuses on AI safety, robustness, and reliable machine learning. This includes work on certifying LLM judges and the relative calibration of teacher–student models, calibrating semantic confidence scores, and developing adaptive inference-time steering methods, alongside contributions to hallucination detection and universal in-context approximation for recurrent models.",
     "location": {
       "city": "Oxford",
       "countryCode": "UK"
@@ -89,6 +89,12 @@
     }
   ],
   "publications": [
+    {
+      "name": "Tight PAC-Bayes Generalisation Guarantees for Large Language Model Safety Monitoring",
+      "publisher": "NeurIPS 2026",
+      "releaseDate": "2026",
+      "url": "https://openreview.net/forum?id=megigqX2Rj"
+    },
     {
       "name": "Focus On This, Not That! Steering LLMs with Adaptive Feature Specification",
       "publisher": "ICML 2025",
