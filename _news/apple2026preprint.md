@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New preprint from my Apple MLR internship: [*Rewards for Budget-Aware Multi-Turn Agents That Adapt to Arbitrary Test-Time Constraints*](https://arxiv.org/abs/2610.28409).
+New preprint: [*Rewards for Budget-Aware Multi-Turn Agents That Adapt to Arbitrary Test-Time Constraints*](https://arxiv.org/abs/2610.28409).
