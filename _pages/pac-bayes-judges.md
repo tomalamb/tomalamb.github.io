@@ -25,8 +25,10 @@ affiliations:
 
 links:
   - name: Paper
+    icon: fa-solid fa-file-pdf
     url: "https://openreview.net/forum?id=megigqX2Rj"
   - name: Code
+    icon: fa-brands fa-github
     url: "https://github.com/tomalamb/generalisation-guarantees-llm-judges"
 
 toc:
@@ -47,9 +49,6 @@ toc:
   - name: Discussion
   - name: Conclusion
   - name: Citation
-
-_styles: >
-  .takeaway { border-left: 3px solid var(--global-theme-color); padding: 0.5em 1em; margin: 1em 0 1.5em; background: var(--global-code-bg-color); }
 ---
 
 ## Introduction

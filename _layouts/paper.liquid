@@ -17,25 +17,62 @@
     <script src="{{ '/assets/js/distillpub/transforms.v2.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/distillpub/overrides.js' | relative_url }}"></script>
     <style>
-      .paper-header { grid-column: text; text-align: center; margin-top: 1.5em; }
+      @media (min-width: 768px) {
+        .paper d-title, .paper d-article, .paper d-appendix {
+          grid-template-columns:
+            [screen-start] 1fr [page-start kicker-start middle-start text-start]
+            minmax(0, 900px) [text-end page-end middle-end kicker-end gutter-start gutter-end] 1fr [screen-end];
+        }
+      }
+      .paper d-title { padding: 3.5rem 0 2.5rem; border-bottom: 1px solid var(--global-divider-color); }
+      .paper d-title h1 {
+        text-align: center; font-size: clamp(1.9rem, 4vw, 2.7rem); line-height: 1.2;
+        font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.6em;
+      }
+      .paper d-title p {
+        text-align: center; font-size: 1.15rem; font-style: italic;
+        color: var(--global-text-color-light); max-width: 46em; margin: 0 auto;
+      }
+      .paper-header { grid-column: text; text-align: center; margin-top: 1.8em; }
       .paper-header .authors { font-size: 1.15rem; }
-      .paper-header .authors span { margin: 0 0.6em; white-space: nowrap; }
-      .paper-header .authors a { color: var(--global-theme-color); }
-      .paper-header .affiliations { color: var(--global-text-color-light); margin-top: 0.4em; }
-      .paper-header .affiliations span { margin: 0 0.6em; white-space: nowrap; }
-      .paper-header .venue { font-weight: bold; margin-top: 0.6em; }
-      .paper-header .links { margin-top: 1em; }
+      .paper-header .authors span { display: inline-block; margin: 0 0.7em; }
+      .paper-header .authors a { color: var(--global-theme-color); text-decoration: none; }
+      .paper-header .affiliations { color: var(--global-text-color-light); margin-top: 0.4em; font-size: 0.95rem; }
+      .paper-header .affiliations span { display: inline-block; margin: 0 0.7em; }
+      .paper-header .venue {
+        display: inline-block; margin-top: 1.1em; padding: 0.15em 0.9em; border-radius: 1em;
+        font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em;
+        background: var(--global-code-bg-color); color: var(--global-text-color);
+      }
+      .paper-header .links { margin-top: 1.3em; }
       .paper-header .links a {
-        margin: 0.25em; padding: 0.3em 1.2em; border-radius: 1em;
-        border: 1px solid var(--global-theme-color); color: var(--global-theme-color);
+        display: inline-block; margin: 0.3em; padding: 0.45em 1.3em; border-radius: 2em;
+        background: var(--global-theme-color); color: var(--global-bg-color) !important;
+        font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: opacity 0.2s;
       }
-      d-title h1, d-title p { text-align: center; }
-      d-article d-contents {
-        display: block; grid-column: text; grid-row: auto; justify-self: stretch;
-        width: auto; padding: 0.5em 1.25em; margin-bottom: 1.5em;
-        border: 1px solid var(--global-divider-color);
+      .paper-header .links a:hover { opacity: 0.8; }
+      .paper-header .links i { margin-right: 0.45em; }
+      .paper d-article { padding-top: 2.5rem; font-size: 1.05rem; }
+      .paper d-article h2 { margin-top: 2.2em; }
+      .paper d-article d-contents {
+        display: block; grid-column: text; grid-row: auto; justify-self: stretch; width: auto;
+        padding: 1.2em 1.6em; margin-bottom: 1em; border: none; border-radius: 10px;
+        background: var(--global-code-bg-color);
       }
-      d-article d-contents nav { grid-column: none; }
+      .paper d-article d-contents nav { grid-column: none; column-count: 2; column-gap: 2.5em; }
+      .paper d-article d-contents nav h3 { column-span: all; }
+      .paper d-article d-contents .toc-section { break-inside: avoid; font-weight: normal; }
+      @media (max-width: 767px) { .paper d-article d-contents nav { column-count: 1; } }
+      .paper figure img, .paper d-article .img-fluid { border-radius: 10px; }
+      .paper d-article .caption { font-size: 0.9rem; color: var(--global-text-color-light); margin: 0.6em 0 2em; }
+      .paper .takeaway {
+        border-left: 4px solid var(--global-theme-color); border-radius: 0 10px 10px 0;
+        padding: 0.9em 1.3em; margin: 1.5em 0 2em; background: var(--global-code-bg-color);
+      }
+      .paper d-article mjx-container[display="true"] {
+        font-size: 105% !important; max-width: 100%; overflow-x: auto; overflow-y: hidden;
+      }
+      .paper d-article pre, .paper d-article pre code { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 0.85rem; }
       {{ page._styles }}
     </style>
   </head>
@@ -59,7 +96,7 @@
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     {% include header.liquid %}
 
-    <div class="post distill">
+    <div class="post distill paper">
       <d-title>
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
@@ -81,7 +118,7 @@
           {% if page.links %}
             <div class="links">
               {% for link in page.links %}
-                <a class="btn btn-sm z-depth-0" href="{{ link.url }}" role="button">{{ link.name }}</a>
+                <a class="btn btn-sm z-depth-0" href="{{ link.url }}" role="button">{% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}{{ link.name }}</a>
               {% endfor %}
             </div>
           {% endif %}
@@ -94,6 +131,7 @@
             <nav class="l-text figcaption">
               <h3>Contents</h3>
               {% for section in page.toc %}
+                <div class="toc-section">
                 <div>
                   <a href="#{{ section.name | slugify }}">{{ section.name }}</a>
                 </div>
@@ -106,6 +144,7 @@
                     {% endfor %}
                   </ul>
                 {% endif %}
+                </div>
               {% endfor %}
             </nav>
           </d-contents>
@@ -118,7 +157,8 @@
         <d-citation-list></d-citation-list>
       </d-appendix>
 
-      <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}"></d-bibliography>
+      {% capture bib_path %}bibliography/{{ page.bibliography }}{% endcapture %}
+      <d-bibliography><script type="text/bibtex">{% include {{ bib_path }} %}</script></d-bibliography>
     </div>
 
     {% include footer.liquid %}
