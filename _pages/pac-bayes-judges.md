@@ -26,7 +26,7 @@ affiliations:
 links:
   - name: Paper
     icon: fa-solid fa-file-pdf
-    url: "https://openreview.net/forum?id=megigqX2Rj"
+    url: "https://openreview.net/forum?id=lDwefojK2s#discussion"
   - name: Code
     icon: fa-brands fa-github
     url: "https://github.com/tomalamb/generalisation-guarantees-llm-judges"
@@ -129,11 +129,11 @@ The Solomonoff prior assigns greater prior probability to hypotheses with shorte
 | **LoRA-XS** | $$W = W_0 + U\Sigma R V^\top$$ | $$R\in\mathbb{R}^{r\times r}$$ per weight matrix |
 | **LoRA-TN** | $$W = W_0 + U\Sigma\big(\sum_{i=1}^u v_i P_i\big)V^\top$$ | $$\mathbf{v}\in\mathbb{R}^{u}$$ per weight matrix |
 | **LoRA-TT** | $$W = W_0 + U\Sigma\big(\sum_{i=1}^u v^{(\ell)}_i P_i\big)V^\top$$ | $$\mathbf{v}^{(\ell)}\in\mathbb{R}^{u}$$ per layer, shared by all its weight matrices |
-| **LoRA-GT** | as LoRA-TT | as LoRA-TT, quantised with one scale shared across all layers |
+| **LoRA-GT (ours)** | as LoRA-TT | as LoRA-TT, quantised with one scale shared across all layers |
 
-Here $$U$$, $$\Sigma$$ and $$V$$ come from the singular value decomposition (SVD) of $$W_0$$ and, together with the fixed random matrices $$P_i \in \mathbb{R}^{r\times r}$$, remain frozen during training. LoRA-TN and LoRA-TT are the non-tied and weight-tied variants of LoRA-T. In LoRA-TT, each weight matrix in layer $$\ell$$ keeps its own frozen $$P_i$$ but shares the trainable vector $$\mathbf{v}^{(\ell)}$$. LoRA-GT, novel to this work, keeps the LoRA-TT update and changes only how it is quantised.
+Here $$U$$, $$\Sigma$$ and $$V$$ come from the singular value decomposition (SVD) of $$W_0$$ and, together with the fixed random matrices $$P_i \in \mathbb{R}^{r\times r}$$, remain frozen during training. LoRA-TN and LoRA-TT are the non-tied and weight-tied variants of LoRA-T. In LoRA-TT, each weight matrix in layer $$\ell$$ keeps its own frozen $$P_i$$ but shares the trainable vector $$\mathbf{v}^{(\ell)}$$.
 
-**Scale overhead.** Under $$b$$-bit quantisation of LoRA-TT, the per-layer scales stored in bfloat16 cost $$16L$$ bits, dominating $$\lvert h \rvert$$ for small $$u$$ and $$b$$. At $$u{=}1$$, $$b{=}2$$ on Llama-Guard-3-8B ($$L{=}32$$), the weights require only 64 bits while the scales require 512. Sharing a single global scale across layers removes $$(L-1)\times16$$ bits of this metadata, taking the total from 576 to 80 bits, an 86% reduction, and leaves the complexity term set more by the weights themselves than by reconstruction overhead.
+**LoRA-GT (ours).** LoRA-GT keeps the LoRA-TT update and changes only how it is quantised. Under $$b$$-bit quantisation of LoRA-TT, the per-layer scales stored in bfloat16 cost $$16L$$ bits, dominating $$\lvert h \rvert$$ for small $$u$$ and $$b$$. At $$u{=}1$$, $$b{=}2$$ on Llama-Guard-3-8B ($$L{=}32$$), the weights require only 64 bits while the scales require 512. Sharing a single global scale across layers, what we introduce here as LoRA-GT, removes $$(L-1)\times16$$ bits of this metadata, taking the total from 576 to 80 bits, an 86% reduction, and leaves the complexity term set more by the weights themselves than by reconstruction overhead.
 
 | Llama-Guard-3-8B, $$u{=}1$$, $$b{=}2$$ | Weights | Scales | Total |
 |:--|--:|--:|--:|
