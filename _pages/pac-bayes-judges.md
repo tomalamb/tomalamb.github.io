@@ -66,7 +66,7 @@ Guardrail models are already capable safety judges, so adaptation to a new safet
 {% include figure.liquid path="assets/img/pac-bayes-judges/pull.png" class="img-fluid" zoomable=true %}
 
 <div class="caption">
-  <b>Figure 1. Compression yields tight, non-vacuous PAC-Bayes guarantees for safety oversight models.</b> <b>Left:</b> LoRA-T with per-tensor versus shared global scaling (LoRA-GT), which removes the per-layer quantisation-scale metadata that dominates PEFT adaptor description lengths under aggressive compression. <b>Right:</b> certified bounds and test risk on BeaverTails under 0–1 and Brier losses, where LoRA-GT achieves the tightest certificates among the shown adaptors while retaining competitive test risk.
+  <b>Figure 1. Compression yields tight, non-vacuous PAC-Bayes guarantees for safety oversight models.</b> <b>Left:</b> LoRA-T with per-layer versus shared global scaling (LoRA-GT), which removes the per-layer quantisation-scale metadata that dominates PEFT adaptor description lengths under aggressive compression. <b>Right:</b> certified bounds and test risk on BeaverTails under 0–1 and Brier losses, where LoRA-GT achieves the tightest certificates among the shown adaptors while retaining competitive test risk.
 </div>
 
 Our contributions are the following:
@@ -79,7 +79,7 @@ Our contributions are the following:
 
 ### Quantisation, compression, and description length
 
-Quantisation maps real-valued parameters $$\theta \in \mathbb{R}^p$$ to a finite discrete representation $$(z, s)$$, where $$z$$ contains the quantised values and $$s$$ the reconstruction parameters, such as a scale. The resulting discrete representation can be further compressed losslessly, using a compressor such as Brotli, into a binary string $$c(h)$$. We define the description length of a hypothesis $$h$$ as $$\lvert h \rvert := \lvert c(h) \rvert$$. This reflects the minimum description length principle, an application of Occam's razor that favours simple hypotheses that fit the data. In our PAC-Bayes certificates, shorter descriptions contribute a smaller complexity term.
+Quantisation maps real-valued parameters $$\theta \in \mathbb{R}^p$$ to a finite discrete representation $$(z, s)$$, where $$z$$ contains the quantised values and $$s$$ the reconstruction parameters, such as a scale parmater to map quantised weights back to the original model's precision. The resulting discrete representation can be further compressed losslessly, using a compressor such as Brotli, into a binary string $$c(h)$$. We define the description length of a hypothesis $$h$$ as $$\lvert h \rvert := \lvert c(h) \rvert$$. This reflects the minimum description length principle, an application of Occam's razor that favours simple hypotheses that fit the data. In our PAC-Bayes certificates, shorter descriptions contribute a smaller complexity term.
 
 ### PAC-Bayes bounds
 
@@ -117,19 +117,28 @@ $$
 \mathcal{R}_{G}(h) \leq \inf_{\lambda>0} \left\{ \frac{1}{1 - e^{-\lambda/n}} \left[ 1 - \exp\left(-\frac{\lambda \widehat{\mathcal{R}}_S(h) + \mathrm{KL}^{\mathrm{UB}}(\mathbb{Q}_h \| \mathbb{P}_{\mathrm{Sol}}) + \log \frac{2+\sqrt{2n}}{\beta}}{n} \right) \right] \right\}.
 $$
 
-The certificate thus bounds the risk of the deployed judge under $$\mathbb{P}_{\mathcal{D},G}$$. Its tightness reflects a trade-off between the empirical performance and simplicity of the learned judge. No assumptions are made on the learning algorithm itself: the judge is trained conventionally before its adaptor is quantised and compressed for certification.
+The certificate thus bounds the risk of the deployed judge under $$\mathbb{P}_{\mathcal{D},G}$$. Its tightness reflects a trade-off between the empirical performance and simplicity of the learned judge. No assumptions are made on the learning algorithm itself, with the judge trained conventionally before its adaptor is quantised and compressed for certification.
 
 ### LoRA-GT: global-scale quantised adaptations
 
-The Solomonoff prior assigns greater prior probability to hypotheses with shorter descriptions, formalising an Occam's razor-style preference for simpler hypotheses. Our hypothesis class is accordingly the set of PEFT adaptations of a frozen oversight model, namely LoRA <d-cite key="hu2022lora"></d-cite>, LoRA-XS <d-cite key="balazy2024lora"></d-cite>, and LoRA-T <d-cite key="morris2026learning"></d-cite>, of increasing parameter efficiency. In the weight-tied variant of LoRA-T, a single vector $$\mathbf{v}^{(\ell)} \in \mathbb{R}^u$$ is shared across all adapted modules within each layer $$\ell$$, and the adapted weights take the form
+The Solomonoff prior assigns greater prior probability to hypotheses with shorter descriptions, formalising an Occam's razor-style preference for simpler hypotheses. Our hypothesis class is accordingly the set of PEFT adaptations of a frozen oversight model. As in standard PEFT, every adaptor targets all linear layers in each transformer block, namely the attention and MLP projections, replacing each frozen weight matrix $$W_0$$ with an adapted $$W$$. We consider a sequence of progressively smaller updates, from LoRA <d-cite key="hu2022lora"></d-cite> through LoRA-XS <d-cite key="balazy2024lora"></d-cite> to the LoRA-T family <d-cite key="morris2026learning"></d-cite>. Fewer learned parameters give potentially shorter descriptions, and hence a smaller complexity term.
 
-$$
-W = W_0 + U \Sigma \Big( \textstyle\sum_{i=1}^u v_i P_i \Big) V^\top,
-$$
+| Adaptor | Update to each weight matrix | Trainable parameters |
+|:--|:--|:--|
+| **LoRA** | $$W = W_0 + BA$$ | $$B\in\mathbb{R}^{d\times r},\ A\in\mathbb{R}^{r\times k}$$ per weight matrix |
+| **LoRA-XS** | $$W = W_0 + U\Sigma R V^\top$$ | $$R\in\mathbb{R}^{r\times r}$$ per weight matrix |
+| **LoRA-TN** | $$W = W_0 + U\Sigma\big(\sum_{i=1}^u v_i P_i\big)V^\top$$ | $$\mathbf{v}\in\mathbb{R}^{u}$$ per weight matrix |
+| **LoRA-TT** | $$W = W_0 + U\Sigma\big(\sum_{i=1}^u v^{(\ell)}_i P_i\big)V^\top$$ | $$\mathbf{v}^{(\ell)}\in\mathbb{R}^{u}$$ per layer, shared by all its weight matrices |
+| **LoRA-GT** | as LoRA-TT | as LoRA-TT, quantised with one scale shared across all layers |
 
-where $$U, \Sigma, V$$ and $$\{P_i\}_{i=1}^u$$ are fixed.
+Here $$U$$, $$\Sigma$$ and $$V$$ come from the singular value decomposition of $$W_0$$ and, together with the fixed random matrices $$P_i \in \mathbb{R}^{r\times r}$$, remain frozen during training. LoRA-TN and LoRA-TT are the non-tied and weight-tied variants of LoRA-T. In LoRA-TT, each weight matrix in layer $$\ell$$ keeps its own frozen $$P_i$$ but shares the trainable vector $$\mathbf{v}^{(\ell)}$$. LoRA-GT, novel to this work, keeps the LoRA-TT update and changes only how it is quantised.
 
-**Scale overhead.** Under $$b$$-bit quantisation of weight-tied LoRA-T, the per-layer scales stored in bfloat16 cost $$16L$$ bits, dominating $$\lvert h \rvert$$ for small $$u$$ and $$b$$. At $$u{=}1$$, $$b{=}2$$ on Llama-Guard-3-8B ($$L{=}32$$), the weights require only 64 bits while the scales require 512. Sharing a single global scale across layers removes $$(L-1)\times16$$ bits of this metadata, taking the total from 576 to 80 bits, an 86% reduction, and leaves the complexity term set more by the weights themselves than by reconstruction overhead.
+**Scale overhead.** Under $$b$$-bit quantisation of LoRA-TT, the per-layer scales stored in bfloat16 cost $$16L$$ bits, dominating $$\lvert h \rvert$$ for small $$u$$ and $$b$$. At $$u{=}1$$, $$b{=}2$$ on Llama-Guard-3-8B ($$L{=}32$$), the weights require only 64 bits while the scales require 512. Sharing a single global scale across layers removes $$(L-1)\times16$$ bits of this metadata, taking the total from 576 to 80 bits, an 86% reduction, and leaves the complexity term set more by the weights themselves than by reconstruction overhead.
+
+| Llama-Guard-3-8B, $$u{=}1$$, $$b{=}2$$ | Weights | Scales | Total |
+|:--|--:|--:|--:|
+| LoRA-TT: one scale per layer | 64 bits | 512 bits | 576 bits |
+| **LoRA-GT: one shared scale** | 64 bits | 16 bits | **80 bits** |
 
 ## Empirical evaluation
 
