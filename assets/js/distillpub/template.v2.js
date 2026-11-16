@@ -841,7 +841,7 @@ ${math}
           .map((s) => s.trim()[0]);
         initials = initials.join(".") + ".";
       }
-      return template.replace("${F}", firsts).replace("${L}", last).replace("${I}", initials).trim(); // in case one of first or last was empty
+      return template.replace("${F}", firsts).replace("${L}", last).replace("${I}", initials).trim().replace(/,$/, ""); // in case one of first or last was empty
     });
     if (names.length > 1) {
       var str = name_strings.slice(0, names.length - 1).join(sep);

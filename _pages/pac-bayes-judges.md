@@ -53,7 +53,7 @@ toc:
 
 ## Introduction
 
-Large language models (LLMs) are increasingly deployed in generative workflows and agentic systems, including in safety-critical domains, yet remain vulnerable to adversarial attacks, misuse, and hallucinations and so require oversight. Since human supervision does not scale, _scalable oversight_ <d-cite key="bowman2022measuring"></d-cite>, in which LLMs act as automated judges, is becoming increasingly common for monitoring deployed models. Guardrail models such as Llama Guard <d-cite key="inan2023llama"></d-cite> and Qwen3Guard <d-cite key="zhao2025qwen3guard"></d-cite> already make safety decisions at scale, such as whether to block, escalate, or allow a model output.
+Large language models (LLMs) are increasingly deployed in generative workflows <d-cite key="brown2020language"></d-cite> and agentic systems <d-cite key="luo2025large"></d-cite>, including in safety-critical domains, yet remain vulnerable to adversarial attacks, misuse, and hallucinations <d-cite key="wang2023decodingtrust,zou2023universal"></d-cite> and so require oversight. Since human supervision does not scale, _scalable oversight_ <d-cite key="bowman2022measuring"></d-cite>, in which LLMs act as automated judges, is becoming increasingly common for monitoring deployed models <d-cite key="inan2023llama"></d-cite>. Guardrail models such as Llama Guard <d-cite key="chi2024llama"></d-cite> and Qwen3Guard <d-cite key="zhao2025qwen3guard"></d-cite> already make safety decisions at scale, such as whether to block, escalate, or allow a model output.
 
 For these decisions to be reliable, judges must generalise beyond their evaluation samples, while thresholded safety decisions additionally require well-calibrated uncertainty estimates. However, judges are increasingly used in safety-critical settings without formal guarantees on their performance or predictive uncertainty, while what determines their generalisation remains poorly understood.
 
@@ -83,7 +83,7 @@ Quantisation maps real-valued parameters $$\theta \in \mathbb{R}^p$$ to a finite
 
 ### PAC-Bayes bounds
 
-Among the many bounds in the PAC-Bayes literature, we adopt a generalised Catoni-style bound <d-cite key="rodriguez2024more"></d-cite>, not explored in prior compression-based analyses of LLMs, which yields the tightest certificates in our setting. For a loss in $$[0,1]$$, a prior $$\mathbb{P}$$ independent of the sample $$S$$ and any $$\beta \in (0,1)$$, with probability at least $$1-\beta$$, simultaneously for all posteriors $$\mathbb{Q}$$,
+Among the many bounds in the PAC-Bayes literature <d-cite key="alquier2024user"></d-cite>, we adopt a generalised Catoni-style bound <d-cite key="rodriguez2024more"></d-cite>, not explored in prior compression-based analyses of LLMs, which yields the tightest certificates in our setting. For a loss in $$[0,1]$$, a prior $$\mathbb{P}$$ independent of the sample $$S$$ and any $$\beta \in (0,1)$$, with probability at least $$1-\beta$$, simultaneously for all posteriors $$\mathbb{Q}$$,
 
 $$
 \mathcal{R}_{\mathcal{D}}(\mathbb{Q}) \leq \inf_{\lambda>0} \left\{ \frac{1}{1 - e^{-\lambda/n}} \left[ 1 - \exp\left(-\frac{\lambda \widehat{\mathcal{R}}_S(\mathbb{Q}) + \mathrm{KL}(\mathbb{Q}\|\mathbb{P}) + \log \frac{2+\sqrt{2n}}{\beta}}{n} \right) \right] \right\}.
