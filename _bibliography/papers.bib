@@ -17,10 +17,11 @@
 
 @inproceedings{lamb2026tight,
   title        = {Tight {PAC}-{Bayes} Generalisation Guarantees for Large Language Model Judges},
-  author       = {Lamb, Tom A and Torr, Philip and Rudner, Tim G J},
+  author       = {Lamb, Tom A and Torr, Philip H S and Rudner, Tim G J},
   booktitle    = {Advances in Neural Information Processing Systems},
   year         = {2026},
   abbr         = {NeurIPS},
+  arxiv        = {2611.20818},
   html         = {https://openreview.net/forum?id=lDwefojK2s#discussion},
   website      = {/pac-bayes-judges/},
   abstract     = {We develop PAC-Bayes certification methods for LLM-based safety monitoring that produce non-vacuous generalisation guarantees even with limited safety alignment data. Our key finding is that highly compressed PEFT adaptations yield extremely short adaptation description lengths, enabling informative and often tight guarantees that certify both classification risk and predictive uncertainty. We introduce LoRA-GT, a quantisation technique that reduces adapter description length while maintaining performance, and show empirically that the compressibility of adaptations directly correlates with certification strength: compressed adaptations exhibit minimal degradation in performance while enabling substantially stronger certification, suggesting that simpler safety adaptations may naturally be more certifiable. We further show that functional distortion serves as a practical tool for identifying simple, certifiable safety models.},

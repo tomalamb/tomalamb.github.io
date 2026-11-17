@@ -27,6 +27,9 @@ links:
   - name: Paper
     icon: fa-solid fa-file-pdf
     url: "https://openreview.net/forum?id=lDwefojK2s#discussion"
+  - name: arXiv
+    icon: ai ai-arxiv
+    url: "https://arxiv.org/abs/2611.20818"
   - name: Code
     icon: fa-brands fa-github
     url: "https://github.com/tomalamb/generalisation-guarantees-llm-judges"
